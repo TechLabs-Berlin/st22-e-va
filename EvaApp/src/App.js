@@ -1,14 +1,28 @@
+import React, { useEffect } from 'react'
+
 import logo from './logo.svg';
+
+
 import './App.css';
 import axios from 'axios';
 function App() {
-  axios({
-    method: 'GET',
-    url: `localhost:8080/`,
-  }).then(value => {
-    console.log('wow')
-    console.log(value)
-  })
+  useEffect(() => {
+    async function fetchData() {
+      let something = "";
+      try {
+        something = await axios.get("http://localhost:8080");
+      } catch (err) {
+        console.log("error happened");
+        console.log(err);
+      }
+
+      console.log(something);
+    }
+    fetchData();
+  }, []);
+
+
+
   return (
     <div className="App">
       Hello world!!
