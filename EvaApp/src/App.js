@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { Route, Routes, Navigate } from 'react-router-dom';
+
 import {
   Avatar,
   Box,
@@ -17,12 +19,16 @@ import {
 } from '@mui/material/';
 import SnehaButton from './Component/SnehaButtom';
 
-import logo from './logo.svg';
 
 
 import './App.css';
 import axios from 'axios';
-function App() {
+
+import LandingPage from "./Pages/LandingPage"
+import FirstPage from "./Pages/FirstPage";
+
+/*
+const App = () {}
   useEffect(() => {
     async function fetchData() {
       let something = "";
@@ -37,16 +43,25 @@ function App() {
     }
     fetchData();
   }, []);
+  
+    return (
+      <div className="App">
+        Hello world!!
+        <Button>Register</Button>
+        <SnehaButton></SnehaButton>
+      </div>
+    );
+  }
+  */
+
+  const App = () => (
+    <Routes>
+      <Route path="/firstpage" exact element = {<FirstPage />} />
+      <Route path="/" exact element = {<LandingPage />} />
+
+    </Routes>
+  )
 
 
-
-  return (
-    <div className="App">
-      Hello world!!
-      <Button>Register</Button>
-      <SnehaButton></SnehaButton>
-    </div>
-  );
-}
 
 export default App;
