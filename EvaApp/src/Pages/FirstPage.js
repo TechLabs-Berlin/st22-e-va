@@ -1,7 +1,9 @@
-const FirstPage = () =>{
+import AppFrame from "../HigherOrderComponent/AppFrame";
+
+const FirstPage = () => {
     return <div>
-        omar
+    Welcome
     </div>
 
 }
-export default FirstPage;
+export default AppFrame(FirstPage);
