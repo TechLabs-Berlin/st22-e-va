@@ -26,6 +26,7 @@ import axios from 'axios';
 
 import LandingPage from "./Pages/LandingPage"
 import FirstPage from "./Pages/FirstPage";
+import NewPageSurvey from './Pages/NewPageSurvey';
 
 /*
 const App = () {}
@@ -56,8 +57,10 @@ const App = () {}
 
   const App = () => (
     <Routes>
-      <Route path="/firstpage" exact element = {<FirstPage />} />
-      <Route path="/" exact element = {<LandingPage />} />
+      <Route path="/firstpage" element={<FirstPage />} />
+      <Route path="/survey" element={<NewPageSurvey/>}/>
+      <Route path="/" exact element={<LandingPage />} />
+    
 
     </Routes>
   )

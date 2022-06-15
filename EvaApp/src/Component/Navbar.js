@@ -173,7 +173,7 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            E-VA App
           </Typography>
           <Search>
             <SearchIconWrapper>

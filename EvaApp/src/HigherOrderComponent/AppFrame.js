@@ -3,6 +3,7 @@ import { Box, Grid, Typography, Stack } from "@mui/material/";
 
 import Navbar from "../Component/Navbar";
 
+
 function AppFrame(WrappedComponent) {
   function WrapperComponent() {
     return (
