@@ -1,11 +1,14 @@
 import AppFrame from "../HigherOrderComponent/AppFrame";
-import Questionnaire from "../Component/Questionnaire";
+import Form from "../Component/Form";
+
 
 
 const NewPageSurvey = () => {
     return <div>
-        Welcome 
-        <Questionnaire/>
+        Welcome to E-va App
+        <Form/>
+        
+    
     </div>
 
 }
