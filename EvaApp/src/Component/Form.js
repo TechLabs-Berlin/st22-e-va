@@ -13,6 +13,7 @@ import RadioTwo from "./RadioTwo";
 import Combobox from "./Combobox";
 import RadioThree from "./RadioThree";
 import RadioFour from "./RadioFour";
+
 const StepSwitch = ({ stepIndex }) => {
   switch (stepIndex) {
     case 1:

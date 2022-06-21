@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import AppFrame from "../HigherOrderComponent/AppFrame";
+import SignUp from "../Component/SignUp";
 
-export class UserReg extends Component {
-  render() {
-    return (
-      <div>UserReg</div>
-    )
-  }
+const UserReg = () => {
+  return <div>
+      <SignUp/>
+  </div>
+
 }
 
-export default UserReg
+export default AppFrame(UserReg);
