@@ -29,32 +29,6 @@ import FirstPage from "./Pages/FirstPage";
 import NewPageSurvey from './Pages/NewPageSurvey';
 import UserReg from './Pages/UserReg';
 import PeriodTracker from './Pages/PeriodTracker';
-/*
-const App = () {}
-  useEffect(() => {
-    async function fetchData() {
-      let something = "";
-      try {
-        something = await axios.get("http://localhost:8080");
-      } catch (err) {
-        console.log("error happened");
-        console.log(err);
-      }
-
-      console.log(something);
-    }
-    fetchData();
-  }, []);
-  
-    return (
-      <div className="App">
-        Hello world!!
-        <Button>Register</Button>
-        <SnehaButton></SnehaButton>
-      </div>
-    );
-  }
-  */
 
   const App = () => (
     <Routes>

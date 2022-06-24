@@ -1,4 +1,4 @@
-import Calendar from "react-calendar";
+import Calendar from "../Component/Calendar";
 import AppFrame from "../HigherOrderComponent/AppFrame";
 
 
@@ -6,7 +6,7 @@ import AppFrame from "../HigherOrderComponent/AppFrame";
 
 const PeriodTracker = () => {
     return <div>
-        Hello, currently working on period PeriodTracker
+        Hello, currently working on PeriodTracker
         <Calendar/>
     
     </div>
