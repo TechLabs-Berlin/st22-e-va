@@ -1,8 +1,9 @@
 import AppFrame from "../HigherOrderComponent/AppFrame";
+import NewForm from "../Component/NewForm";
 
 const FirstPage = () => {
     return <div>
-    Welcome
+    <NewForm/>
     </div>
 
 }
