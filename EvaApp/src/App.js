@@ -24,7 +24,7 @@ import SnehaButton from './Component/SnehaButtom';
 import './App.css';
 import axios from 'axios';
 
-import LandingPage from "./Pages/LandingPage"
+import SymptomTracker from "./Pages/SymptomTracker"
 import FirstPage from "./Pages/FirstPage";
 import NewPageSurvey from './Pages/NewPageSurvey';
 import UserReg from './Pages/UserReg';
@@ -34,7 +34,7 @@ import PeriodTracker from './Pages/PeriodTracker';
     <Routes>
       <Route path="/firstpage" element={<FirstPage />} />
       <Route path="/survey" element={<NewPageSurvey/>}/>
-      <Route path="/" exact element={<LandingPage />} />
+      <Route path="/symptomtracker" exact element={<SymptomTracker />} />
       <Route path="/signup" element={<UserReg />} />
       <Route path="/periodtracker" element={<PeriodTracker />}/>
      

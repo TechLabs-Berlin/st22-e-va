@@ -4,7 +4,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 
-const Pumpkin = ({ selected }) => {
+const Symptoms = ({ selected }) => {
   return selected ? '👩' : '👧';
 };
 export default ({ handleSelection }) => {
@@ -24,51 +24,50 @@ export default ({ handleSelection }) => {
         onChange={handler}
       >
         <FormControlLabel
-          value="Happy"
-          control={<Radio sx={{
-            display: 'none', fontSize: 50 }} />}
-          label={selected === 'Happy' ? ' 😁 ' : ' 😊 '}
+          value="Acne"
+          control={<Radio sx={{ display: 'none' }} />}
+          label={selected === 'Acne' ? ' 😁 ' : ' 😊 '}
         />
         <FormControlLabel
-          value="Energetic"
+          value="Backaches"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Energetic' ? ' 🙆‍♀️ ' : ' 🙇‍♀️ '}
+          label={selected === 'Backaches' ? ' 🙆‍♀️ ' : ' 🙇‍♀️ '}
         />
        
         <FormControlLabel
-          value="Mood swings"
+          value="Cramps"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Mood swings' ? ' 🧟‍♀️ ' : ' 💁‍♀️ '}
+          label={selected === 'Cramps' ? ' 💁‍♀️ ' : ' 🧟‍♀️ '}
         />
         <FormControlLabel
-          value="Irritated"
+          value="Cravings (Salty)"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Irritated' ? ' 😵 ' : ' 😑 '}
+          label={selected === 'Cravings (Salty)' ? ' 😵 ' : ' 😑 '}
         />
         <FormControlLabel
-          value="Calm"
+          value="Cravings (Sweets)"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Calm' ? ' 😇 ' : ' 😌 '}
+          label={selected === 'Cravings (Sweets)' ? ' 😇 ' : ' 😌 '}
         />
         <FormControlLabel
-          value="Sick"
+          value="Dizziness"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Sick' ? ' 🤮 ' : ' 🤢 '}
+          label={selected === 'Dizziness' ? ' 🤮 ' : ' 🤢 '}
         />
         <FormControlLabel
-          value="Sleepy"
+          value="Spotting"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Sleepy' ? ' 😴 ' : '  🥱 '}
+          label={selected === 'Spotting' ? ' 😴 ' : '  🥱 '}
         />
         <FormControlLabel
-          value="Weepy"
+          value="Headaches"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Weepy' ? ' 😥 ' : ' 😭 '}
+          label={selected === 'Headaches' ? ' 😥 ' : ' 😭 '}
         />
         <FormControlLabel
-          value="Frisky"
+          value="Tender Breasts"
           control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Frisky' ? ' 😜 ' : ' 😏 '}
+          label={selected === 'Tender Breasts' ? ' 😜 ' : ' 😏 '}
         />
       </RadioGroup>
     </FormControl>
