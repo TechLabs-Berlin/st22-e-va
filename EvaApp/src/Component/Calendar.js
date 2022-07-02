@@ -1,17 +1,34 @@
+import { Dialog, Typography, Paper } from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Moment from "react-moment";
+import SymptomTracker from "../Pages/SymptomTracker";
 
 function App() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [cycle, setCycle] = useState(28);
+  const [openSymptomTracker, setOpenSymptomTracker] = useState(false);
 
   console.log(cycle);
   const cycleLength = parseInt(cycle);
 
+  const handleSymptomTrackerOpen = () => {
+    setOpenSymptomTracker(!openSymptomTracker);
+  };
+  const handleCalendarDaySelection = (value) => {
+    console.log(value);
+    handleSymptomTrackerOpen();
+    setSelectedDate(value);
+  };
+
   return (
     <>
+      <Dialog onClose={handleSymptomTrackerOpen} open={openSymptomTracker}>
+        <Paper>
+          <SymptomTracker />
+        </Paper>
+      </Dialog>
       <div className="text-center">
         <nav className="navbar navbar-light bg-light">
           <div className="container-fluid text-center"></div>
@@ -21,7 +38,7 @@ function App() {
       <p className="text-center">Select Your Period Start Date</p>
       <div className="d-flex justify-content-center ">
         <Calendar
-          onChange={setSelectedDate}
+          onChange={handleCalendarDaySelection}
           value={selectedDate}
           className="calendar mt-0"
         />
