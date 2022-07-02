@@ -4,9 +4,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 
-const Symptoms = ({ selected }) => {
-  return selected ? '👩' : '👧';
-};
+
 export default ({ handleSelection }) => {
   const [selected, setSelected] = useState('');
 
