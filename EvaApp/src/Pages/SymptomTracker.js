@@ -6,6 +6,7 @@ import Symptoms from "../Component/Symptoms";
 import Exercise from "../Component/Exercise";
 import Pills from "../Component/Pills";
 import Ttc from "../Component/Ttc";
+import FlowType from "../Component/FlowType";
 
 const SymptomTracker = () => {
   const [selections, setSelections] = useState({
@@ -14,6 +15,7 @@ const SymptomTracker = () => {
     Exercise: "",
     Pills: "",
     Ttc: "",
+    FlowType: "",
   });
 
   const handleMoodSelection = (mood) => {
@@ -46,6 +48,13 @@ const SymptomTracker = () => {
       ttc: ttc,
     });
   };
+  const handleFlowTypeSelection = (FlowType) => {
+    setSelections({
+      ...selections,
+      FlowType: FlowType,
+    });
+  };
+
   return (
     <Stack>
       <Stack direction="row" spacing={2}>
@@ -67,6 +76,10 @@ const SymptomTracker = () => {
       <Stack direction="row" spacing={2}>
         <Typography fontSize={30}>TTC:{selections.Ttc}</Typography>
         <Ttc handleSelection={handleTtcSelection} />
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Typography fontSize={30}>Flow Type:{selections.FlowType}</Typography>
+        <FlowType handleSelection={handleFlowTypeSelection} />
       </Stack>
     </Stack>
   );
