@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import { Typography } from '@mui/material';
+import { useState } from "react";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import { Typography } from "@mui/material";
 
 export default ({ handleSelection }) => {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState("");
 
   const handler = (event) => {
     handleSelection(event.target.value);
@@ -22,18 +22,24 @@ export default ({ handleSelection }) => {
         onChange={handler}
       >
         <FormControlLabel
-          value="Happy"
-          control={<Radio sx={{
-            display: 'none',
-          }} />}
-          label={<Typography fontSize={30}>{selected === 'Happy' ? ' 😁 ' : ' 😊 '}</Typography>}
+          value="Cycling"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Run" ? "🏃🏻‍♀️" : "🚶🏻‍♀️"}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Energetic"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={<Typography fontSize={30}>{selected === 'Energetic' ? ' 🙆‍♀️ ' : ' 🙇‍♀️ '}</Typography>}
-              />
-          </RadioGroup>
+          value="Cycling"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Cycling" ? " 🚵🏻‍♀️ " : "  🚴🏻‍♀️ "}
+            </Typography>
+          }
+        />
+      </RadioGroup>
     </FormControl>
   );
 };
