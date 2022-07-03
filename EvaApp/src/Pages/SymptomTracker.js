@@ -5,12 +5,15 @@ import { useState } from "react";
 import Symptoms from "../Component/Symptoms";
 import Exercise from "../Component/Exercise";
 import Pills from "../Component/Pills";
+import Ttc from "../Component/Ttc";
 
 const SymptomTracker = () => {
   const [selections, setSelections] = useState({
     Mood: "",
     Symptoms: "",
     Exercise: "",
+    Pills: "",
+    Ttc: "",
   });
 
   const handleMoodSelection = (mood) => {
@@ -37,6 +40,12 @@ const SymptomTracker = () => {
       pills: pills,
     });
   };
+  const handleTtcSelection = (ttc) => {
+    setSelections({
+      ...selections,
+      ttc: ttc,
+    });
+  };
   return (
     <Stack>
       <Stack direction="row" spacing={2}>
@@ -54,6 +63,10 @@ const SymptomTracker = () => {
       <Stack direction="row" spacing={2}>
         <Typography fontSize={30}>Pills:{selections.Pills}</Typography>
         <Pills handleSelection={handlePillsSelection} />
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Typography fontSize={30}>TTC:{selections.Ttc}</Typography>
+        <Ttc handleSelection={handleTtcSelection} />
       </Stack>
     </Stack>
   );
