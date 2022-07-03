@@ -22,20 +22,63 @@ export default ({ handleSelection }) => {
         onChange={handler}
       >
         <FormControlLabel
-          value="Cycling"
-          control={<Radio sx={{ display: "none" }} />}
+          value="Run"
+          control={
+            <Radio
+              sx={{
+                display: "none",
+              }}
+            />
+          }
           label={
             <Typography fontSize={30}>
-              {selected === "Run" ? "🏃🏻‍♀️" : "🚶🏻‍♀️"}
+              {selected === "Run" ? "  🏃🏻‍♀️ " : "  🚶🏻‍♀️ "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Cycling"
+          value="Walk"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Cycling" ? " 🚵🏻‍♀️ " : "  🚴🏻‍♀️ "}
+              {selected === "Walk" ? "  🚶🏻‍♀️ " : " 🧍🏻‍♀️ "}
+            </Typography>
+          }
+        />
+        <FormControlLabel
+          value="Weights"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Weights" ? "🏋🏻‍♀️ " : " 🧍🏻‍♀️ "}
+            </Typography>
+          }
+        />
+        <FormControlLabel
+          value="Meditation"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Meditation" ? " 🧘🏻‍♀️ " : " 💆🏻‍♀️ "}
+            </Typography>
+          }
+        />
+        <FormControlLabel
+          value="Sport"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Sport" ? " ⛹🏻‍♀️ " : "  🤾🏻‍♀️ "}
+            </Typography>
+          }
+        />
+
+        <FormControlLabel
+          value="Cycle"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Cycle" ? " 🚵🏻‍♀️ " : " 🚴🏻‍♀️ "}
             </Typography>
           }
         />

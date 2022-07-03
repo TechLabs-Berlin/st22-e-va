@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-
+import { useState } from "react";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import { Typography } from "@mui/material";
 
 export default ({ handleSelection }) => {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState("");
 
   const handler = (event) => {
     handleSelection(event.target.value);
@@ -22,50 +22,92 @@ export default ({ handleSelection }) => {
         onChange={handler}
       >
         <FormControlLabel
-          value="Acne"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Acne' ? ' 😁 ' : ' 😊 '}
+          value="Happy"
+          control={
+            <Radio
+              sx={{
+                display: "none",
+              }}
+            />
+          }
+          label={
+            <Typography fontSize={30}>
+              {selected === "Happy" ? " 😁 " : " 😊 "}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Backaches"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Backaches' ? ' 🙆‍♀️ ' : ' 🙇‍♀️ '}
+          value="Energetic"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Energetic" ? " 🙆‍♀️ " : " 🙇‍♀️ "}
+            </Typography>
+          }
         />
-       
+
         <FormControlLabel
-          value="Cramps"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Cramps' ? ' 💁‍♀️ ' : ' 🧟‍♀️ '}
-        />
-        <FormControlLabel
-          value="Cravings (Salty)"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Cravings (Salty)' ? ' 😵 ' : ' 😑 '}
-        />
-        <FormControlLabel
-          value="Cravings (Sweets)"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Cravings (Sweets)' ? ' 😇 ' : ' 😌 '}
+          value="Mood swings"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Mood swings" ? " 🧟‍♀️ " : " 💁‍♀️ "}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Dizziness"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Dizziness' ? ' 🤮 ' : ' 🤢 '}
+          value="Irritated"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Irritated" ? " 😵 " : " 😑 "}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Spotting"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Spotting' ? ' 😴 ' : '  🥱 '}
+          value="Calm"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Calm" ? " 😇 " : " 😌 "}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Headaches"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Headaches' ? ' 😥 ' : ' 😭 '}
+          value="Sick"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Sick" ? " 🤮 " : " 🤢 "}
+            </Typography>
+          }
         />
         <FormControlLabel
-          value="Tender Breasts"
-          control={<Radio sx={{ display: 'none' }} />}
-          label={selected === 'Tender Breasts' ? ' 😜 ' : ' 😏 '}
+          value="Sleepy"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Sleepy" ? " 😴 " : "  🥱 "}
+            </Typography>
+          }
+        />
+        <FormControlLabel
+          value="Weepy"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Weepy" ? " 😭 " : " 😥 "}
+            </Typography>
+          }
+        />
+        <FormControlLabel
+          value="Frisky"
+          control={<Radio sx={{ display: "none" }} />}
+          label={
+            <Typography fontSize={30}>
+              {selected === "Frisky" ? " 😜 " : " 😏 "}
+            </Typography>
+          }
         />
       </RadioGroup>
     </FormControl>
