@@ -22,7 +22,7 @@ export default ({ handleSelection }) => {
         onChange={handler}
       >
         <FormControlLabel
-          value="Happy"
+          value="Acne"
           control={
             <Radio
               sx={{
@@ -32,80 +32,80 @@ export default ({ handleSelection }) => {
           }
           label={
             <Typography fontSize={30}>
-              {selected === "Happy" ? " 😁 " : " 😊 "}
+              {selected === "Acne" ? " 🌚 " : "  🌝 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Energetic"
+          value="Bloating"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Energetic" ? " 🙆‍♀️ " : " 🙇‍♀️ "}
+              {selected === "Bloating" ? "  🙍🏻‍♀️ " : "  🙅🏻‍♀️ "}
             </Typography>
           }
         />
 
         <FormControlLabel
-          value="Mood swings"
+          value="Craving sweet"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Mood swings" ? " 🧟‍♀️ " : " 💁‍♀️ "}
+              {selected === "Craving sweet" ? " 🍩 " : " 🍪 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Irritated"
+          value="Craving salty"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Irritated" ? " 😵 " : " 😑 "}
+              {selected === "Craving salty" ? " 🥯 " : "  🥨 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Calm"
+          value="Dizziness"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Calm" ? " 😇 " : " 😌 "}
+              {selected === "Dizziness" ? " 🤕 " : " 😳 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Sick"
+          value="Insomnia"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Sick" ? " 🤮 " : " 🤢 "}
+              {selected === "Insomnia" ? " 🧐 " : " 🤨 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Sleepy"
+          value="Bodyache"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Sleepy" ? " 😴 " : "  🥱 "}
+              {selected === "Bodyache" ? " 😫 " : " 😩 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Weepy"
+          value="Cramps"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Weepy" ? " 😭 " : " 😥 "}
+              {selected === "Cramps" ? " ☠️ " : " 💀 "}
             </Typography>
           }
         />
         <FormControlLabel
-          value="Frisky"
+          value="Indigestion"
           control={<Radio sx={{ display: "none" }} />}
           label={
             <Typography fontSize={30}>
-              {selected === "Frisky" ? " 😜 " : " 😏 "}
+              {selected === "Indigestion" ? " 🥴 " : " 😕 "}
             </Typography>
           }
         />

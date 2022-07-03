@@ -4,6 +4,7 @@ import EmojiSelector from "../Component/EmojiSelector";
 import { useState } from "react";
 import Symptoms from "../Component/Symptoms";
 import Exercise from "../Component/Exercise";
+import Pills from "../Component/Pills";
 
 const SymptomTracker = () => {
   const [selections, setSelections] = useState({
@@ -30,7 +31,12 @@ const SymptomTracker = () => {
       exercise: exercise,
     });
   };
-
+  const handlePillsSelection = (pills) => {
+    setSelections({
+      ...selections,
+      pills: pills,
+    });
+  };
   return (
     <Stack>
       <Stack direction="row" spacing={2}>
@@ -43,7 +49,11 @@ const SymptomTracker = () => {
       </Stack>
       <Stack direction="row" spacing={2}>
         <Typography fontSize={30}>Exercise:{selections.Exercise}</Typography>
-        <EmojiSelector handleSelection={handleExerciseSelection} />
+        <Exercise handleSelection={handleExerciseSelection} />
+      </Stack>
+      <Stack direction="row" spacing={2}>
+        <Typography fontSize={30}>Pills:{selections.Pills}</Typography>
+        <Pills handleSelection={handlePillsSelection} />
       </Stack>
     </Stack>
   );
