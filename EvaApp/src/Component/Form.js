@@ -95,7 +95,7 @@ const steps = [
   "Tell us about PMS",
   "Let's talk about mood",
   "Let's talk about birth control",
-  "Final question"
+  "Final question",
 ];
 
 export default function HorizontalLinearStepper() {
