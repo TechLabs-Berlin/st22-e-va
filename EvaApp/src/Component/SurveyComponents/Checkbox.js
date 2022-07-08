@@ -3,8 +3,9 @@ import Box from "@mui/material/Box";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
+//to check with Soma, if we can leave .useState empty?
 export default function IndeterminateCheckbox() {
-  const [checked, setChecked] = React.useState([true]);
+  const [checked, setChecked] = React.useState([]);
 
   const handleChangePads = (event) => {
     setChecked([event.target.checked, checked[1], checked[2], checked[3]]);
@@ -22,7 +23,6 @@ export default function IndeterminateCheckbox() {
     setChecked([checked[0], checked[1], checked[2], event.target.checked]);
   };
 
-  //need help for FormControlLabel//
   return (
     <div>
       <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>

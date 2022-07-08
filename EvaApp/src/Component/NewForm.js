@@ -1,16 +1,15 @@
 import { FormControl } from "@mui/material";
 import AppFrame from "../HigherOrderComponent/AppFrame";
-import { Dialog, Box } from "@mui/material";
+import { Box, ButtonGroup, makeStyles, Stack } from "@mui/material";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import RadioButton from "./RadioButton";
-import Select from "./Select";
-import Slider from "./Slider";
-import Checkbox from "./Checkbox";
-import RadioTwo from "./RadioTwo";
-import Combobox from "./Combobox";
-import RadioThree from "./RadioThree";
-import RadioFour from "./RadioFour";
+import RadioButton from "./SurveyComponents/RadioButton";
+import Select from "./SurveyComponents/Select";
+import Slider from "./SurveyComponents/Slider";
+import Checkbox from "./SurveyComponents/Checkbox";
+import RadioTwo from "./SurveyComponents/RadioTwo";
+import Combobox from "./SurveyComponents/Combobox";
+import RadioThree from "./SurveyComponents/RadioThree";
+import RadioFour from "./SurveyComponents/RadioFour";
 import { useState } from "react";
 
 const NewForm = () => {
@@ -20,13 +19,64 @@ const NewForm = () => {
     <div>
       {activePage === 1 && (
         <>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            margin={5}
+            border={1}
+            borderColor={"black"}
+            borderRadius={5}
+            padding={1}
+            width={400}
+            height={400}
+            color={"#bc888c"}
+            backgroundColor={"#ffeaee"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
+            <p>
+              We would like to get to know you a little better so that we can
+              make a more accurate assessment. Would you be willing to answer a
+              few questions? It won't take long!
+            </p>
+            <Stack spacing={2} direction="column">
+              <Button
+                variant="contained"
+                size="small"
+                flexDirection="column"
+                padding="10"
+                margin="5"
+                height="10"
+                width="250"
+                backgroundColor="black"
+                bgcolor="white"
+              >
+                Let's do it!
+              </Button>
+              <Button
+                variant="contained"
+                size="small"
+                flexDirection="column"
+                padding="10"
+                margin="5"
+                height="10"
+                width="250"
+              >
+                Not now! Maybe later
+              </Button>
+            </Stack>
+          </Box>
+        </>
+      )}
+      {activePage === 2 && (
+        <>
           <Box>
             <h3>Do you track your period?</h3>
             <RadioButton />
           </Box>
         </>
       )}
-      {activePage === 2 && (
+      {activePage === 3 && (
         <>
           <Box>
             {" "}
@@ -35,7 +85,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 3 && (
+      {activePage === 4 && (
         <>
           <Box>
             {" "}
@@ -44,7 +94,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 4 && (
+      {activePage === 5 && (
         <>
           <Box>
             {" "}
@@ -53,7 +103,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 5 && (
+      {activePage === 6 && (
         <>
           <Box>
             {" "}
@@ -62,7 +112,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 6 && (
+      {activePage === 7 && (
         <>
           <Box>
             {" "}
@@ -71,7 +121,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 7 && (
+      {activePage === 8 && (
         <>
           <Box>
             {" "}
@@ -80,7 +130,7 @@ const NewForm = () => {
           </Box>
         </>
       )}
-      {activePage === 8 && (
+      {activePage === 9 && (
         <>
           <Box>
             <h3>

@@ -5,16 +5,16 @@ import Slider from "@mui/material/Slider";
 const marks = [
   {
     value: 0,
-    label: "Light"
+    label: "Light",
   },
   {
     value: 50,
-    label: "Medium"
+    label: "Medium",
   },
   {
     value: 100,
-    label: "Heavy"
-  }
+    label: "Heavy",
+  },
 ];
 
 function valuetext(value) {
