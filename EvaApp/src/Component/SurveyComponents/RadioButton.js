@@ -11,7 +11,7 @@ export default function RadioButtonsGroup() {
       <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
       <RadioGroup
         aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue=""
+        defaultValue="other"
         name="radio-buttons-group"
       >
         <FormControlLabel

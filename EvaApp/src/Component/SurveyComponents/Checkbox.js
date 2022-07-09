@@ -25,7 +25,7 @@ export default function IndeterminateCheckbox() {
 
   return (
     <div>
-      <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", ml: "3px" }}>
         <FormControlLabel
           label="Pads"
           control={

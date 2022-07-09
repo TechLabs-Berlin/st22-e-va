@@ -21,6 +21,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -30,12 +32,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             <p>
               We would like to get to know you a little better so that we can
@@ -54,10 +59,12 @@ const NewForm = () => {
                   padding: "20px",
                   margin: "5px",
                   height: "10px",
-                  width: "150px",
+                  width: "200px",
                   buttonShadow: "10px",
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
+                  textTransform: "none",
+                  fontSize: "15px",
                 }}
               >
                 Let's do it!
@@ -74,10 +81,12 @@ const NewForm = () => {
                   padding: "20px",
                   margin: "5px",
                   height: "10px",
-                  width: "150px",
+                  width: "200px",
                   buttonShadow: "10px",
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
+                  textTransform: "none",
+                  fontSize: "15px",
                 }}
               >
                 Not now, maybe later!
@@ -91,6 +100,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -100,12 +111,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             <h3>Do you track your period?</h3>
             <RadioButton />
@@ -117,6 +131,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -126,12 +142,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3>What is your cycle length?</h3>
@@ -144,6 +163,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -153,12 +174,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3>Which period product do you use?</h3>
@@ -171,6 +195,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -180,12 +206,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3>How would you describe your flow?</h3>
@@ -198,6 +227,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -207,12 +238,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3>Is it easy for you to cope with PMS symptoms? </h3>
@@ -225,6 +259,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -234,12 +270,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3> Do you have mood swings on your period? </h3>
@@ -252,6 +291,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -261,12 +302,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             {" "}
             <h3>Are you on birth control now?</h3>
@@ -279,6 +323,8 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
             sx={{
               boxShadow: "25px",
               p: "20px",
@@ -288,12 +334,15 @@ const NewForm = () => {
               borderRadius: "25px",
               width: "400px",
               height: "400px",
-              color: "#dda0ad",
+              color: "#aa717e",
               backgroundColor: "#e9dadb",
               fontFamily: "Open Sans",
+              position: "absolute",
+              top: "50px",
+              left: "50px",
+              marginTop: "100px",
+              marginLeft: "400px",
             }}
-            textAlign={("center", "justify")}
-            alignItems={"center"}
           >
             <h3>
               Do you have any reproductive health disorders (endometriosis,
@@ -309,6 +358,7 @@ const NewForm = () => {
           onClick={() => {
             setActivePage(activePage - 1);
           }}
+          sx={{}}
         >
           {" "}
           Previous{" "}

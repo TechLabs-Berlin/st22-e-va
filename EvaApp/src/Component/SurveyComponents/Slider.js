@@ -23,7 +23,7 @@ function valuetext(value) {
 
 export default function DiscreteSliderLabel() {
   return (
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: "280px", margin: "30px" }}>
       <Slider
         aria-label="Always visible"
         defaultValue={0}
