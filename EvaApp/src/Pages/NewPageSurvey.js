@@ -1,4 +1,3 @@
-import AppFrame from "../HigherOrderComponent/AppFrame";
 import NewForm from "../Component/NewForm";
 
 const NewPageSurvey = () => {
@@ -9,4 +8,4 @@ const NewPageSurvey = () => {
     </div>
   );
 };
-export default AppFrame(NewPageSurvey);
+export default NewPageSurvey;

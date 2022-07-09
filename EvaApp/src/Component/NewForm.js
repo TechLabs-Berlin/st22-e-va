@@ -1,6 +1,5 @@
 import { FormControl } from "@mui/material";
-import AppFrame from "../HigherOrderComponent/AppFrame";
-import { Box, ButtonGroup, makeStyles, Stack } from "@mui/material";
+import { Box, Stack, createTheme } from "@mui/material";
 import Button from "@mui/material/Button";
 import RadioButton from "./SurveyComponents/RadioButton";
 import Select from "./SurveyComponents/Select";
@@ -22,15 +21,19 @@ const NewForm = () => {
           <Box
             display={"flex"}
             flexDirection={"column"}
-            margin={5}
-            border={1}
-            borderColor={"black"}
-            borderRadius={5}
-            padding={1}
-            width={400}
-            height={400}
-            color={"#bc888c"}
-            backgroundColor={"#ffeaee"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
             textAlign={("center", "justify")}
             alignItems={"center"}
           >
@@ -44,25 +47,40 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
-                padding="10"
-                margin="5"
-                height="10"
-                width="250"
-                backgroundColor="black"
-                bgcolor="white"
+                sx={{
+                  color: "#ffffff",
+                  backgroundColor: "#dda0ad",
+                  fontWeight: "bold",
+                  padding: "20px",
+                  margin: "5px",
+                  height: "10px",
+                  width: "150px",
+                  buttonShadow: "10px",
+                  fontFamily: "Open Sans",
+                  "&:hover": { backgroundColor: "#aa717e" },
+                }}
               >
                 Let's do it!
               </Button>
+
               <Button
                 variant="contained"
                 size="small"
                 flexDirection="column"
-                padding="10"
-                margin="5"
-                height="10"
-                width="250"
+                sx={{
+                  color: "#ffffff",
+                  backgroundColor: "#dda0ad",
+                  fontWeight: "bold",
+                  padding: "20px",
+                  margin: "5px",
+                  height: "10px",
+                  width: "150px",
+                  buttonShadow: "10px",
+                  fontFamily: "Open Sans",
+                  "&:hover": { backgroundColor: "#aa717e" },
+                }}
               >
-                Not now! Maybe later
+                Not now, maybe later!
               </Button>
             </Stack>
           </Box>
@@ -70,7 +88,25 @@ const NewForm = () => {
       )}
       {activePage === 2 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             <h3>Do you track your period?</h3>
             <RadioButton />
           </Box>
@@ -78,7 +114,25 @@ const NewForm = () => {
       )}
       {activePage === 3 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3>What is your cycle length?</h3>
             <Select />
@@ -87,7 +141,25 @@ const NewForm = () => {
       )}
       {activePage === 4 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3>Which period product do you use?</h3>
             <Checkbox />
@@ -96,7 +168,25 @@ const NewForm = () => {
       )}
       {activePage === 5 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3>How would you describe your flow?</h3>
             <Slider />
@@ -105,7 +195,25 @@ const NewForm = () => {
       )}
       {activePage === 6 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3>Is it easy for you to cope with PMS symptoms? </h3>
             <RadioTwo />
@@ -114,7 +222,25 @@ const NewForm = () => {
       )}
       {activePage === 7 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3> Do you have mood swings on your period? </h3>
             <Combobox />
@@ -123,7 +249,25 @@ const NewForm = () => {
       )}
       {activePage === 8 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             {" "}
             <h3>Are you on birth control now?</h3>
             <RadioThree />
@@ -132,7 +276,25 @@ const NewForm = () => {
       )}
       {activePage === 9 && (
         <>
-          <Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            sx={{
+              boxShadow: "25px",
+              p: "20px",
+              margin: "20px",
+              border: "10px",
+              borderColor: "black",
+              borderRadius: "25px",
+              width: "400px",
+              height: "400px",
+              color: "#dda0ad",
+              backgroundColor: "#e9dadb",
+              fontFamily: "Open Sans",
+            }}
+            textAlign={("center", "justify")}
+            alignItems={"center"}
+          >
             <h3>
               Do you have any reproductive health disorders (endometriosis,
               PCOS, etc)?{" "}
