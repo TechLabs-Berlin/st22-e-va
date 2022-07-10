@@ -8,7 +8,14 @@ export default function ComboBox() {
       disablePortal
       id="combo-box-demo"
       options={mood}
-      sx={{ width: "300px" }}
+      //like the other combobox, changes color only after clicking elsewhere on the screen
+      sx={{
+        width: "300px",
+        color: "#dda0ad",
+        "&.Mui-checked": {
+          color: "#aa717e",
+        },
+      }}
       renderInput={(params) => <TextField {...params} label="Select" />}
     />
   );

@@ -11,20 +11,62 @@ export default function RadioButtonsGroup() {
       <FormLabel id="demo-radio-buttons-group-label"></FormLabel>
       <RadioGroup
         aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="Yes"
-        //check default value with Soma
         name="radio-buttons-group"
       >
-        <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+        <FormControlLabel
+          value="Yes"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="Yes"
+        />
         <FormControlLabel
           value="Not sure"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
           label="No, but I was."
         />
-        <FormControlLabel value="No" control={<Radio />} label="No" />
+        <FormControlLabel
+          value="No"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="No"
+        />
         <FormControlLabel
           value="Other"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
           label="Prefer not to answer"
         />
       </RadioGroup>

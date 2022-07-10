@@ -47,7 +47,7 @@ const NewForm = () => {
               make a more accurate assessment. Would you be willing to answer a
               few questions? It won't take long!
             </p>
-            <Stack spacing={2} direction="column">
+            <Stack direction="column">
               <Button
                 variant="contained"
                 size="small"
@@ -353,12 +353,28 @@ const NewForm = () => {
         </>
       )}
 
-      {activePage > 1 && (
+      {activePage > 2 && (
         <Button
+          variant="contained"
+          size="small"
+          flexDirection="row"
           onClick={() => {
             setActivePage(activePage - 1);
           }}
-          sx={{}}
+          sx={{
+            color: "#ffffff",
+            backgroundColor: "#dda0ad",
+            fontWeight: "bold",
+            padding: "20px",
+            margin: "5px",
+            height: "10px",
+            width: "80px",
+            buttonShadow: "10px",
+            fontFamily: "Open Sans",
+            "&:hover": { backgroundColor: "#aa717e" },
+            textTransform: "none",
+            fontSize: "15px",
+          }}
         >
           {" "}
           Previous{" "}
@@ -366,8 +382,25 @@ const NewForm = () => {
       )}
 
       <Button
+        variant="contained"
+        size="small"
+        flexDirection="row"
         onClick={() => {
           setActivePage(activePage + 1);
+        }}
+        sx={{
+          color: "#ffffff",
+          backgroundColor: "#dda0ad",
+          fontWeight: "bold",
+          padding: "20px",
+          margin: "5px",
+          height: "10px",
+          width: "80px",
+          buttonShadow: "10px",
+          fontFamily: "Open Sans",
+          "&:hover": { backgroundColor: "#aa717e" },
+          textTransform: "none",
+          fontSize: "15px",
         }}
       >
         {" "}

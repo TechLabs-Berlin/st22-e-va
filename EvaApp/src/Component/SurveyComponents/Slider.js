@@ -31,6 +31,12 @@ export default function DiscreteSliderLabel() {
         step={50}
         marks={marks}
         valueLabelDisplay="on"
+        sx={{
+          color: "#dda0ad",
+          "&.Mui-checked": {
+            color: "#aa717e",
+          },
+        }}
       />
     </Box>
   );

@@ -14,11 +14,46 @@ export default function RadioButtonsGroup() {
         defaultValue="female"
         name="radio-buttons-group"
       >
-        <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
-        <FormControlLabel value="No" control={<Radio />} label="No" />
+        <FormControlLabel
+          value="Yes"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="Yes"
+        />
+        <FormControlLabel
+          value="No"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="No"
+        />
         <FormControlLabel
           value="Other"
-          control={<Radio />}
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
           label="Prefer not to answer"
         />
       </RadioGroup>
