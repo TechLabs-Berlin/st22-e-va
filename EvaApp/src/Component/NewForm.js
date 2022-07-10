@@ -374,6 +374,10 @@ const NewForm = () => {
             "&:hover": { backgroundColor: "#aa717e" },
             textTransform: "none",
             fontSize: "15px",
+            top: "50px",
+            left: "50px",
+            marginTop: "400px",
+            marginLeft: "430px",
           }}
         >
           {" "}
@@ -401,6 +405,10 @@ const NewForm = () => {
           "&:hover": { backgroundColor: "#aa717e" },
           textTransform: "none",
           fontSize: "15px",
+          top: "50px",
+          left: "50px",
+          marginTop: "400px",
+          marginLeft: "215px",
         }}
       >
         {" "}
