@@ -34,6 +34,7 @@ export default function SignUp() {
     console.log({
       email: data.get("email"),
       password: data.get("password"),
+      renterPassword: data.get("confirm password"),
     });
   };
 
@@ -48,7 +49,7 @@ export default function SignUp() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            color: "#aa717e",
+            color: "#6E5F6A",
             background: "#e9dadb",
             padding: "50px",
             height: "600px",
@@ -58,12 +59,8 @@ export default function SignUp() {
             fontSize: "10px",
           }}
         >
-          <Avatar
-            sx={{ m: 1, bgcolor: "#ed5e6e", width: "56", height: "56" }}
-            src="HELP"
-          />
           <Typography component="h1" variant="h5">
-            Login
+            Send us a Message!
           </Typography>
           <Box
             component="form"
@@ -72,6 +69,18 @@ export default function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  autoComplete="subject"
+                  name="Subject"
+                  required
+                  fullWidth
+                  id="subject"
+                  label="subject"
+                  autoFocus
+                />
+              </Grid>
+
               <Grid item xs={12}>
                 <TextField
                   required
@@ -86,21 +95,15 @@ export default function SignUp() {
                 <TextField
                   required
                   fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
+                  name="message"
+                  label="Message"
+                  type="message"
+                  id="message"
+                  autoComplete="message"
                 />
               </Grid>
-
               <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
-                  }
-                  label="Remember Password"
-                />
+                <Typography>*Required fields</Typography>
               </Grid>
             </Grid>
             <Button
@@ -111,7 +114,7 @@ export default function SignUp() {
                 mt: 3,
                 mb: 2,
                 color: "#ffffff",
-                backgroundColor: "#AA9BA6",
+                backgroundColor: "#DDA0AD",
                 fontWeight: "bold",
                 padding: "20px",
                 margin: "5px",
@@ -125,22 +128,8 @@ export default function SignUp() {
                 "&:hover": { backgroundColor: "#aa717e" },
               }}
             >
-              Login
+              Contact us now!
             </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link
-                  href="http://localhost:3000/signup"
-                  variant="body2"
-                  sx={{
-                    color: "#aa717e",
-                    "&:hover": { color: "#aa717e" },
-                  }}
-                >
-                  Sign Up
-                </Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
         <Copyright sx={{ mt: 5 }} />

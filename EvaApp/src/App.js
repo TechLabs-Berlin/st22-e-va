@@ -28,8 +28,8 @@ import NewPageSurvey from "./Pages/NewPageSurvey";
 import UserReg from "./Pages/UserReg";
 import PeriodTracker from "./Pages/PeriodTracker";
 import Login from "./Pages/Login";
-import Lib from "./Component/Lib";
-
+import Library from "./Pages/Library";
+import Contact from "./Pages/Contact";
 const App = () => (
   <Routes>
     <Route path="/firstpage" element={<FirstPage />} />
@@ -38,7 +38,8 @@ const App = () => (
     <Route path="/signup" element={<UserReg />} />
     <Route path="/periodtracker" element={<PeriodTracker />} />
     <Route path="/login" element={<Login />} />
-    <Route path="/health" element={<Lib />} />
+    <Route path="/health" element={<Library />} />
+    <Route path="/contactus" element={<Contact />} />
   </Routes>
 );
 
