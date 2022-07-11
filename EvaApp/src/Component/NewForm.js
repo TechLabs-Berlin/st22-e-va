@@ -353,7 +353,7 @@ const NewForm = () => {
         </>
       )}
 
-      {activePage > 2 && (
+      {activePage > 1 && (
         <Button
           variant="contained"
           size="small"

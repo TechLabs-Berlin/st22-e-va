@@ -22,7 +22,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="">
+      <Link color="inherit" href="http://localhost:3000/">
         www.eva.com
       </Link>{" "}
       {new Date().getFullYear()}
@@ -39,7 +39,7 @@ export default function SignUp() {
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get("email"),
-      password: data.get("password")
+      password: data.get("password"),
     });
   };
 
@@ -52,7 +52,7 @@ export default function SignUp() {
             marginTop: 8,
             display: "flex",
             flexDirection: "column",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
