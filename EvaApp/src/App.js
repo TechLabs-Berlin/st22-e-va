@@ -28,6 +28,7 @@ import NewPageSurvey from "./Pages/NewPageSurvey";
 import UserReg from "./Pages/UserReg";
 import PeriodTracker from "./Pages/PeriodTracker";
 import Login from "./Pages/Login";
+import Lib from "./Component/Lib";
 
 const App = () => (
   <Routes>
@@ -37,6 +38,7 @@ const App = () => (
     <Route path="/signup" element={<UserReg />} />
     <Route path="/periodtracker" element={<PeriodTracker />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/health" element={<Lib />} />
   </Routes>
 );
 
