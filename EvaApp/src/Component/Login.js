@@ -64,7 +64,7 @@ export default function SignUp() {
             src="HELP"
           />
           <Typography component="h1" variant="h5">
-            Sign up
+            Login
           </Typography>
           <Box
             component="form"
@@ -73,18 +73,6 @@ export default function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  autoComplete="given-name"
-                  name="Name"
-                  required
-                  fullWidth
-                  id="Name"
-                  label="Name"
-                  autoFocus
-                />
-              </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   required
@@ -106,23 +94,13 @@ export default function SignUp() {
                   autoComplete="new-password"
                 />
               </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="confirmPassword"
-                  label="Confirm Password"
-                  type="confirm password"
-                  id="password"
-                  autoComplete="rewrite-password"
-                />
-              </Grid>
+
               <Grid item xs={12}>
                 <FormControlLabel
                   control={
                     <Checkbox value="allowExtraEmails" color="primary" />
                   }
-                  label="I agree with Terms & Conditions."
+                  label="Remember Password"
                 />
               </Grid>
             </Grid>
@@ -148,19 +126,19 @@ export default function SignUp() {
                 "&:hover": { backgroundColor: "#aa717e" },
               }}
             >
-              Sign Up
+              Login
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link
-                  href="http://localhost:3000/login"
+                  href="http://localhost:3000/signup"
                   variant="body2"
                   sx={{
                     color: "#aa717e",
                     "&:hover": { color: "#aa717e" },
                   }}
                 >
-                  Already have an account? Sign in
+                  Sign Up
                 </Link>
               </Grid>
             </Grid>
