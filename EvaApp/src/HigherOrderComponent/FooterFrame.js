@@ -2,16 +2,16 @@ import React from "react";
 import { Box, Grid, Typography, Stack } from "@mui/material/";
 
 import Footer from "../Component/Footer";
-//need to check with Soma
+//need to check with Soma, unable to use it dynamically
 
 function Footer(WrappedComponent) {
   function WrapperComponent() {
     return (
       <>
-        <Navbar />
-        <Box height={100} />
+        <Footer />
+        <Box height={200} />
         <Grid
-          id="appframegrid"
+          id="footerframegrid"
           container
           justifyContent="center"
           spacing={0}
@@ -21,23 +21,6 @@ function Footer(WrappedComponent) {
             <WrappedComponent />
           </Grid>
         </Grid>
-        <footer>
-          <Box
-            paddingLeft={30}
-            paddingRight={30}
-            sx={{
-              backgroundColor: "#f9f9f9",
-              height: "70px",
-            }}
-          >
-            <Stack
-              direction="row"
-              justifyContent="center"
-              width="100%"
-              alignItems="center"
-            ></Stack>
-          </Box>
-        </footer>
       </>
     );
   }

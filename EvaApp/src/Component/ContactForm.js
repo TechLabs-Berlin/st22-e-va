@@ -32,9 +32,9 @@ export default function SignUp() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      subect: data.get("subject"),
       email: data.get("email"),
-      password: data.get("password"),
-      renterPassword: data.get("confirm password"),
+      message: data.get("message"),
     });
   };
 
