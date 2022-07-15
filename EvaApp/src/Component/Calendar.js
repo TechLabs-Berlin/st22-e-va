@@ -64,6 +64,11 @@ function App() {
             className="calendar mt-0"
           />
         </div>
+        <div>
+          <Stack>
+            <button>Add a note</button>
+          </Stack>
+        </div>
       </Stack>
       <Stack
         sx={{
