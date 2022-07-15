@@ -4,25 +4,32 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import { ReactComponent as Running } from "../emojis/Running.svg";
-import { ReactComponent as Noexercise } from "../emojis/noexercise.svg";
+import { ReactComponent as Lowflow } from "../emojis/lowflow.svg";
+import { ReactComponent as Mediumflow } from "../emojis/mediumflow.svg";
+import { ReactComponent as Highflow } from "../emojis/highflow.svg";
 
 export default function FormControlLabelPosition() {
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">Exercise</FormLabel>
+      <FormLabel component="legend">FlowIntensity</FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
           control={<Checkbox />}
-          label={<Running width="60" height="40" />}
+          label={<Lowflow width="60" height="30" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
           control={<Checkbox />}
-          label={<Noexercise width="60" height="40" />}
+          label={<Mediumflow width="60" height="35" />}
+          labelPlacement="top"
+        />
+        <FormControlLabel
+          value="top"
+          control={<Checkbox />}
+          label={<Highflow width="60" height="40" />}
           labelPlacement="top"
         />
       </FormGroup>

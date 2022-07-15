@@ -4,25 +4,25 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import { ReactComponent as Running } from "../emojis/Running.svg";
-import { ReactComponent as Noexercise } from "../emojis/noexercise.svg";
+import { ReactComponent as Heart } from "../emojis/heart.svg";
+import { ReactComponent as Protectedheart } from "../emojis/protectedheart.svg";
 
 export default function FormControlLabelPosition() {
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">Exercise</FormLabel>
+      <FormLabel component="legend">Sexual Activity:</FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
           control={<Checkbox />}
-          label={<Running width="60" height="40" />}
+          label={<Heart width="60" height="40" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
           control={<Checkbox />}
-          label={<Noexercise width="60" height="40" />}
+          label={<Protectedheart width="60" height="40" />}
           labelPlacement="top"
         />
       </FormGroup>

@@ -1,18 +1,23 @@
-import FlowType from "../Component/TrackerComponent/FlowType";
+import FlowIntensity from "../Component/TrackerComponent/FlowIntensity";
+import Flow from "../Component/TrackerComponent/Flow";
+import Mood from "../Component/TrackerComponent/Mood";
 import Exercise from "../Component/TrackerComponent/Exercise";
-import { Stack } from "@mui/material";
+import Pill from "../Component/TrackerComponent/Pill";
+import SexualActivity from "../Component/TrackerComponent/SexualActivity";
 
-const Track = () => {
+import { Stack, Box, Typography } from "@mui/material";
+
+const Tracker = () => {
   return (
     <div>
-      <Stack direction="row" spacing={2}>
-        <FlowType />
-      </Stack>
-      <Stack direction="row" spacing={2}>
-        <Exercise />
-      </Stack>
+      <FlowIntensity />
+      <Flow />
+      <Mood />
+      <Exercise />
+      <Pill />
+      <SexualActivity />
     </div>
   );
 };
 
-export default Track;
+export default Tracker;

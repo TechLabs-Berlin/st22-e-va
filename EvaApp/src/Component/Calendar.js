@@ -1,4 +1,13 @@
-import { Dialog, Typography, Paper, Tooltip, Stack } from "@mui/material";
+import {
+  Dialog,
+  Typography,
+  Paper,
+  Tooltip,
+  Button,
+  Stack,
+  Box,
+  Grid,
+} from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -64,9 +73,124 @@ function App() {
             className="calendar mt-0"
           />
         </div>
+        <Box
+          sx={{
+            boxShadow: "20px",
+            p: "50px",
+            margin: "50px",
+            marginLeft: "5px",
+            marginTop: "20px",
+            border: "50px",
+            borderColor: "#000000",
+            borderRadius: "25px",
+            "& > legend": { mt: 2 },
+            backgroundColor: "#F4F0F1",
+            color: "#C46471",
+            padding: "20px",
+            height: "150px",
+            width: "300px",
+            textTransform: "none",
+          }}
+        >
+          <Button>Add a note</Button>
+        </Box>
+
         <div>
-          <Stack>
-            <button>Add a note</button>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "-500px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Period cycle
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Sexual Activity
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Exercise
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Mood
           </Stack>
         </div>
       </Stack>
