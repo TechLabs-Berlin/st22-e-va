@@ -14,15 +14,33 @@ export default function FormControlLabelPosition() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Heart width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Heart width="30px" height="30px" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Protectedheart width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Protectedheart width="30px" height="30px" />}
           labelPlacement="top"
         />
       </FormGroup>

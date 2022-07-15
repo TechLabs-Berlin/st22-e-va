@@ -19,45 +19,108 @@ export default function FormControlLabelPosition() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Excited width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Excited width="30px" height="30px" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Happy width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Happy width="30px" height="30px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Okay width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Okay width="30px" height="30px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Sick width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Sick width="30px" height="30px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Sad width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Sad width="30px" height="30px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Crying width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Crying width="30px" height="30px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Angry width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Angry width="30px" height="30px" />}
           labelPlacement="top"
         />
       </FormGroup>

@@ -14,14 +14,32 @@ export default function FormControlLabelPosition() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
           label={<Pill width="60" height="40" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
           label={<Nopill width="60" height="40" />}
           labelPlacement="top"
         />

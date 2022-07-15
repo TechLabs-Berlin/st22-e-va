@@ -25,14 +25,14 @@ function srcset(image, width, height, rows = 1, cols = 1) {
     src: `${image}?w=${width * cols}&h=${height * rows}&fit=crop&auto=format`,
     srcSet: `${image}?w=${width * cols}&h=${
       height * rows
-    }&fit=crop&auto=format&dpr=2 2x`,
+    }&fit=crop&auto=format&dpr=0.5 0.5x`,
   };
 }
 
 export default function TitlebarImageList() {
   return (
     <ImageList sx={{ width: 1450, height: 1200, marginTop: "70px" }}>
-      <ImageListItem key="Subheader" cols={2}>
+      <ImageListItem key="Subheader" cols={3}>
         <ListSubheader component="div">
           <Button
             sx={{
@@ -67,7 +67,7 @@ export default function TitlebarImageList() {
         <ImageListItem key={item.img}>
           <img
             src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=0.5 0.5x`}
             alt={item.title}
             loading="lazy"
           />

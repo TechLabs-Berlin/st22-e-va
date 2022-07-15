@@ -15,21 +15,48 @@ export default function FormControlLabelPosition() {
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Lowflow width="60" height="30" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Lowflow width="30px" height="25px" />}
           labelPlacement="top"
         />
 
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Mediumflow width="60" height="35" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Mediumflow width="30px" height="27px" />}
           labelPlacement="top"
         />
         <FormControlLabel
           value="top"
-          control={<Checkbox />}
-          label={<Highflow width="60" height="40" />}
+          control={
+            <Checkbox
+              sx={{
+                color: "#C46471",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label={<Highflow width="30px" height="30px" />}
           labelPlacement="top"
         />
       </FormGroup>
