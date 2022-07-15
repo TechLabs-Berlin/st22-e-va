@@ -13,7 +13,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Moment from "react-moment";
 import SymptomTracker from "../Pages/SymptomTracker";
-
+//glitching with new tracker, check with Soma
 function App() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [cycle, setCycle] = useState(28);
