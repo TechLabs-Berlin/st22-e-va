@@ -27,12 +27,12 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function ContactUs() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      subect: data.get("subject"),
+      subject: data.get("subject"),
       email: data.get("email"),
       message: data.get("message"),
     });
@@ -76,7 +76,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="subject"
-                  label="subject"
+                  label="Subject"
                   autoFocus
                 />
               </Grid>

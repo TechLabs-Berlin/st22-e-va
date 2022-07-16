@@ -15,7 +15,25 @@ import { ReactComponent as Angry } from "../emojis/angry.svg";
 export default function FormControlLabelPosition() {
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">Mood</FormLabel>
+      <FormLabel
+        component="legend"
+        sx={{
+          color: "#aa717e",
+          "&.Mui-checked": {
+            color: "#aa717e",
+          },
+          fontFamily: "Open Sans",
+          position: "absolute",
+          top: "10px",
+          left: "-90px",
+          marginTop: "10px",
+          marginLeft: "10px",
+          fontWeight: "bold",
+          fontSize: "30px",
+        }}
+      >
+        Mood
+      </FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"

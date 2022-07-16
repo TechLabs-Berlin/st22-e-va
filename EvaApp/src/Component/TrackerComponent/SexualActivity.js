@@ -10,7 +10,25 @@ import { ReactComponent as Protectedheart } from "../emojis/protectedheart.svg";
 export default function FormControlLabelPosition() {
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">Sexual Activity:</FormLabel>
+      <FormLabel
+        component="legend"
+        sx={{
+          color: "#aa717e",
+          "&.Mui-checked": {
+            color: "#aa717e",
+          },
+          fontFamily: "Open Sans",
+          position: "absolute",
+          top: "10px",
+          left: "-240px",
+          marginTop: "10px",
+          marginLeft: "10px",
+          fontWeight: "bold",
+          fontSize: "30px",
+        }}
+      >
+        Sexual Activity:
+      </FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"

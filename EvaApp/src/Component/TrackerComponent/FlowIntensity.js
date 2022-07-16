@@ -11,7 +11,25 @@ import { ReactComponent as Highflow } from "../emojis/highflow.svg";
 export default function FormControlLabelPosition() {
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">FlowIntensity</FormLabel>
+      <FormLabel
+        component="legend"
+        sx={{
+          color: "#aa717e",
+          "&.Mui-checked": {
+            color: "#aa717e",
+          },
+          fontFamily: "Open Sans",
+          position: "absolute",
+          top: "10px",
+          left: "-190px",
+          marginTop: "10px",
+          marginLeft: "10px",
+          fontWeight: "bold",
+          fontSize: "30px",
+        }}
+      >
+        FlowIntensity
+      </FormLabel>
       <FormGroup aria-label="position" row>
         <FormControlLabel
           value="top"
@@ -19,9 +37,7 @@ export default function FormControlLabelPosition() {
             <Checkbox
               sx={{
                 color: "#C46471",
-                "&.Mui-checked": {
-                  color: "#aa717e",
-                },
+                "&.Mui-checked": {},
               }}
             />
           }

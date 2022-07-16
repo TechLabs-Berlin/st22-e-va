@@ -7,35 +7,45 @@ import {
   Stack,
   Box,
   Grid,
+  Popper,
+  Fade,
 } from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Moment from "react-moment";
-import SymptomTracker from "../Pages/SymptomTracker";
+import Tracker from "../Pages/Tracker";
+
 //glitching with new tracker, check with Soma
 function App() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [cycle, setCycle] = useState(28);
-  const [openSymptomTracker, setOpenSymptomTracker] = useState(false);
+  const [openTracker, setOpenTracker] = useState(false);
 
   console.log(cycle);
   const cycleLength = parseInt(cycle);
 
-  const handleSymptomTrackerOpen = () => {
-    setOpenSymptomTracker(!openSymptomTracker);
+  const handleTrackerOpen = () => {
+    setOpenTracker(!openTracker);
   };
   const handleCalendarDaySelection = (value) => {
     console.log(value);
-    handleSymptomTrackerOpen();
+    handleTrackerOpen();
     setSelectedDate(value);
   };
 
   return (
     <>
-      <Dialog onClose={handleSymptomTrackerOpen} open={openSymptomTracker}>
-        <Paper>
-          <SymptomTracker />
+      <Dialog onClose={handleTrackerOpen} open={openTracker}>
+        <Paper
+          sx={{
+            height: "1200px",
+            width: "1200px",
+          }}
+        >
+          {" "}
+          Hello
+          <Tracker />
         </Paper>
       </Dialog>
       <Stack
