@@ -11,12 +11,13 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ReactComponent as Logored } from "../Logo/logored.svg";
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="#aa717e" align="center" {...props}>
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="http://localhost:3000/homepage">
         www.eva.com
       </Link>{" "}
       {new Date().getFullYear()}
@@ -82,6 +83,11 @@ export default function SignUp() {
                   id="Name"
                   label="Name"
                   autoFocus
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
 
@@ -93,6 +99,11 @@ export default function SignUp() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -104,6 +115,11 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -115,6 +131,11 @@ export default function SignUp() {
                   type="confirm password"
                   id="password"
                   autoComplete="rewrite-password"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>

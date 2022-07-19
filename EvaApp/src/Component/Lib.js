@@ -19,7 +19,6 @@ import PCOS from "./HealthImages/PCOS.jpg";
 import Share from "./HealthImages/Share.jpg";
 import Workout from "./HealthImages/Workout.jpg";
 import Acne from "./HealthImages/Acne.jpg";
-import Craving from "./HealthImages/Craving.jpg";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {
@@ -51,11 +50,7 @@ export default function TitlebarImageList() {
               align="center"
               sx={{
                 fontFamily: "Open Sans",
-                position: "absolute",
-                top: "60px",
-                left: "50px",
-                marginTop: "60px",
-                marginLeft: "55px",
+                marginTop: "10px",
                 fontWeight: "bold",
                 fontSize: "35px",
               }}

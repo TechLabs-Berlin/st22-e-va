@@ -80,7 +80,7 @@ export default function ContactUs() {
                   autoFocus
                   sx={{
                     "& fieldset": {
-                      borderColor: "green !important",
+                      borderColor: "#6E5F6A !important",
                     },
                   }}
                 />
@@ -94,6 +94,11 @@ export default function ContactUs() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -107,6 +112,11 @@ export default function ContactUs() {
                   autoComplete="message"
                   multiline
                   rows={6}
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>

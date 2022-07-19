@@ -14,6 +14,9 @@ export default function ComboBox() {
         color: "#dda0ad",
         "&.Mui-checked": {
           color: "#aa717e",
+          "& fieldset": {
+            borderColor: "#6E5F6A",
+          },
         },
       }}
       renderInput={(params) => <TextField {...params} label="Select" />}
