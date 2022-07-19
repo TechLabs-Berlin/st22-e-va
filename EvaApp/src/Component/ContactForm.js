@@ -100,6 +100,8 @@ export default function ContactUs() {
                   type="message"
                   id="message"
                   autoComplete="message"
+                  multiline
+                  rows={6}
                 />
               </Grid>
               <Grid item xs={12}>

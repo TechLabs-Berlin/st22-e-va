@@ -84,6 +84,7 @@ export default function BasicRating() {
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
+            console.log(newValue);
           }}
         />
         <Stack>
