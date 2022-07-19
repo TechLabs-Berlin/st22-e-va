@@ -34,6 +34,10 @@ export default function FormControlLabelPosition() {
           value="top"
           control={
             <Checkbox
+              size="medium"
+              style={{
+                width: "20px",
+              }}
               sx={{
                 color: "#C46471",
                 "&.Mui-checked": {

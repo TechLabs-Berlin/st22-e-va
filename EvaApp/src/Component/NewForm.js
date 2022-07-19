@@ -42,6 +42,9 @@ const NewForm = () => {
               left: "50px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             <p>
@@ -69,7 +72,7 @@ const NewForm = () => {
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "18px",
                 }}
               >
                 Let's do it!
@@ -79,6 +82,10 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
+                //check this with Soma
+                onClick={() => {
+                  location.href = "http://localhost:3000/";
+                }}
                 sx={{
                   color: "#ffffff",
                   backgroundColor: "#dda0ad",
@@ -91,10 +98,10 @@ const NewForm = () => {
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "18px",
                 }}
               >
-                Not now, maybe later!
+                Maybe later!
               </Button>
             </Stack>
           </Box>

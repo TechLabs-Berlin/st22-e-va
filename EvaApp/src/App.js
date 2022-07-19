@@ -31,6 +31,8 @@ import Login from "./Pages/Login";
 import Library from "./Pages/Library";
 import Contact from "./Pages/Contact";
 import Tracker from "./Pages/Tracker";
+import Rating from "./Pages/Rating";
+
 const App = () => (
   <Routes>
     <Route path="/firstpage" element={<FirstPage />} />
@@ -42,6 +44,7 @@ const App = () => (
     <Route path="/health" element={<Library />} />
     <Route path="/contactus" element={<Contact />} />
     <Route path="/tracker" element={<Tracker />} />
+    <Route path="/rateus" element={<Rating />} />
   </Routes>
 );
 
