@@ -1,4 +1,3 @@
-import AppFrame from "../HigherOrderComponent/AppFrame";
 import RateUs from "../Component/RateUs";
 
 const Rating = () => {
@@ -8,4 +7,4 @@ const Rating = () => {
     </div>
   );
 };
-export default AppFrame(Rating);
+export default Rating;

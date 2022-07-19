@@ -82,10 +82,6 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
-                //check this with Soma
-                onClick={() => {
-                  location.href = "http://localhost:3000/";
-                }}
                 sx={{
                   color: "#ffffff",
                   backgroundColor: "#dda0ad",
