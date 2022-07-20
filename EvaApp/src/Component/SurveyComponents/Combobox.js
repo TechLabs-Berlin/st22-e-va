@@ -8,7 +8,16 @@ export default function ComboBox() {
       disablePortal
       id="combo-box-demo"
       options={mood}
-      sx={{ width: 300 }}
+      sx={{
+        width: "300px",
+        color: "#dda0ad",
+        "&.Mui-checked": {
+          color: "#aa717e",
+          "& fieldset": {
+            borderColor: "#6E5F6A",
+          },
+        },
+      }}
       renderInput={(params) => <TextField {...params} label="Select" />}
     />
   );
@@ -18,5 +27,5 @@ const mood = [
   { label: "Yes, every time" },
   { label: "Yes, sometimes" },
   { label: "No, never" },
-  { label: "I prefer not to answer" }
+  { label: "I prefer not to answer" },
 ];

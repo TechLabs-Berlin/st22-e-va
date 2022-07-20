@@ -1,24 +1,25 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const routesHandler = require('./routes/handler.js');
+const mongoose = require('mongoose');
+require('dotenv/config');
+
 const app = express();
-const port = 8080;
-const cors = require("cors");
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+app.use('/', routesHandler);
 
-app.use(cors());
+// DB Connection
 
-app.get('/', (req, res) => {
-    console.log('Hello E-va');
-    return res.status(200).send({
-        data: 'EVA desktop project',
-    });
-});
-
-app.get('/newLine', (req, res) => {
-    console.log('Sneha');
-    return res.status(201).send('Eva is working')
+mongoose.connect(process.env.DB_URI, {useNewUrlParser:true, useUnifiedTopology:true})
+.then( () => {
+    console.log('DB Connected!');
 })
-app.listen(port, () => {
-    console.log(`connected on port ${port}`);
+.catch( (err) => {
+    console.log(err);
 });
 
-
-module.exports = app;
+const PORT = process.env.PORT || 8080; // backend routing port
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}.`);
+});

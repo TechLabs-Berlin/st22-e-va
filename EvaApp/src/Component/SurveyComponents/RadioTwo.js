@@ -16,18 +16,45 @@ export default function RadioButtonsGroup() {
       >
         <FormControlLabel
           value="Yes"
-          control={<Radio />}
-          label="Yes, I track my period regularly."
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="Yes"
         />
         <FormControlLabel
           value="No"
-          control={<Radio />}
-          label="No, I didn't think I needed to"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="No"
         />
         <FormControlLabel
           value="Other"
-          control={<Radio />}
-          label="I had't thought about it"
+          control={
+            <Radio
+              sx={{
+                color: "#dda0ad",
+                "&.Mui-checked": {
+                  color: "#aa717e",
+                },
+              }}
+            />
+          }
+          label="Prefer not to answer"
         />
       </RadioGroup>
     </FormControl>

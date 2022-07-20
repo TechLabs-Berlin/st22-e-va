@@ -27,14 +27,14 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function ContactUs() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      subject: data.get("subject"),
       email: data.get("email"),
-      password: data.get("password"),
-      renterPassword: data.get("confirm password"),
+      message: data.get("message"),
     });
   };
 
@@ -49,7 +49,7 @@ export default function SignUp() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            color: "#aa717e",
+            color: "#6E5F6A",
             background: "#e9dadb",
             padding: "50px",
             height: "600px",
@@ -59,12 +59,8 @@ export default function SignUp() {
             fontSize: "10px",
           }}
         >
-          <Avatar
-            sx={{ m: 1, bgcolor: "#ed5e6e", width: "56", height: "56" }}
-            src="HELP"
-          />
           <Typography component="h1" variant="h5">
-            Sign up
+            Send us a Message!
           </Typography>
           <Box
             component="form"
@@ -75,12 +71,12 @@ export default function SignUp() {
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
-                  autoComplete="given-name"
-                  name="Name"
+                  autoComplete="subject"
+                  name="Subject"
                   required
                   fullWidth
-                  id="Name"
-                  label="Name"
+                  id="subject"
+                  label="Subject"
                   autoFocus
                   sx={{
                     "& fieldset": {
@@ -109,11 +105,13 @@ export default function SignUp() {
                 <TextField
                   required
                   fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
+                  name="message"
+                  label="Message"
+                  type="message"
+                  id="message"
+                  autoComplete="message"
+                  multiline
+                  rows={6}
                   sx={{
                     "& fieldset": {
                       borderColor: "#6E5F6A !important",
@@ -122,28 +120,7 @@ export default function SignUp() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="confirmPassword"
-                  label="Confirm Password"
-                  type="confirm password"
-                  id="password"
-                  autoComplete="rewrite-password"
-                  sx={{
-                    "& fieldset": {
-                      borderColor: "#6E5F6A !important",
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
-                  }
-                  label="I agree with Terms & Conditions."
-                />
+                <Typography>*Required fields</Typography>
               </Grid>
             </Grid>
             <Button
@@ -154,7 +131,7 @@ export default function SignUp() {
                 mt: 3,
                 mb: 2,
                 color: "#ffffff",
-                backgroundColor: "#AA9BA6",
+                backgroundColor: "#DDA0AD",
                 fontWeight: "bold",
                 padding: "20px",
                 margin: "5px",
@@ -168,22 +145,8 @@ export default function SignUp() {
                 "&:hover": { backgroundColor: "#aa717e" },
               }}
             >
-              Sign Up
+              Contact us now!
             </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link
-                  href="http://localhost:3000/login"
-                  variant="body2"
-                  sx={{
-                    color: "#aa717e",
-                    "&:hover": { color: "#aa717e" },
-                  }}
-                >
-                  Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
         <Copyright sx={{ mt: 5 }} />

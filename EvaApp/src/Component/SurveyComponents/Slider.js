@@ -5,16 +5,16 @@ import Slider from "@mui/material/Slider";
 const marks = [
   {
     value: 0,
-    label: "Light"
+    label: "Light",
   },
   {
     value: 50,
-    label: "Medium"
+    label: "Medium",
   },
   {
     value: 100,
-    label: "Heavy"
-  }
+    label: "Heavy",
+  },
 ];
 
 function valuetext(value) {
@@ -23,14 +23,20 @@ function valuetext(value) {
 
 export default function DiscreteSliderLabel() {
   return (
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: "280px", margin: "30px" }}>
       <Slider
         aria-label="Always visible"
         defaultValue={0}
         getAriaValueText={valuetext}
         step={50}
         marks={marks}
-        valueLabelDisplay="on"
+        valueLabelDisplay="off"
+        sx={{
+          color: "#dda0ad",
+          "&.Mui-checked": {
+            color: "#aa717e",
+          },
+        }}
       />
     </Box>
   );
