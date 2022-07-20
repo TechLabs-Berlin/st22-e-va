@@ -1,5 +1,4 @@
 # st22-e-va
-# st22-e-va
 
 E-VA is a comprehensive women's wellness desktop App with features such as period tracking, mood & symptom tracking, as well as a health library.
 
@@ -33,6 +32,24 @@ It should open the browser at http://localhost:3000 automatically.
 
 Go to http://localhost:3000/homepage to view E-va Desktop App.
 
+## Roadmap
+
+Having setup the frontend with the several features, we aim to take this app forward for futher development in the future.
+
+From this nascent stage, we aim to build a strong backend and finetune period and mood trackers. We also aim to put the promised features such as chatbot, forum, rich library with fresh and relevant content.
+
+## Features
+
+- [Homepage](http://localhost:3000/homepage)
+- [Sign Up](http://localhost:3000/signup)
+- [Login](http://localhost:3000/login)
+- [Survey](http://localhost:3000/survey) (to understand the body type based on the data)
+- [Period tracker calendar](http://localhost:3000/periodtracker)
+- [Mood & symptom tracker](http://localhost:3000/tracker)
+- [Health library](http://localhost:3000/health)
+- [Contact us](http://localhost:3000/contactus)
+- [Rate us](http://localhost:3000/rateus)
+
 ## Lessons
 
 1. JavaScript is no joke! Building something for the first time is very difficult. Without out mentor, Soma, everything seemed blur.
@@ -53,3 +70,4 @@ Go to http://localhost:3000/homepage to view E-va Desktop App.
 - [Soma Hargitai](https://github.com/somahargitai)
 
 ![Logo](./EvaApp/src/Component/HealthImages/evalogo.png)
+
