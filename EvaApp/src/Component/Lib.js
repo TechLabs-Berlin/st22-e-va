@@ -19,6 +19,7 @@ import PCOS from "./HealthImages/PCOS.jpg";
 import Share from "./HealthImages/Share.jpg";
 import Workout from "./HealthImages/Workout.jpg";
 import Acne from "./HealthImages/Acne.jpg";
+import Craving from "./HealthImages/Craving.jpg";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {

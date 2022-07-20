@@ -6,62 +6,65 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import { ReactComponent as Pill } from "../emojis/pill.svg";
 import { ReactComponent as Nopill } from "../emojis/nopill.svg";
+import { Grid } from "@mui/material";
 
 export default function FormControlLabelPosition() {
   return (
-    <FormControl component="fieldset">
-      <FormLabel
-        component="legend"
-        sx={{
-          color: "#aa717e",
-          "&.Mui-checked": {
-            color: "#aa717e",
-          },
-          fontFamily: "Open Sans",
-          position: "absolute",
-          top: "10px",
-          left: "-150px",
-          marginTop: "10px",
-          marginLeft: "10px",
-          fontWeight: "bold",
-          fontSize: "30px",
-        }}
-      >
-        Pill
-      </FormLabel>
-      <FormGroup aria-label="position" row>
-        <FormControlLabel
-          value="top"
-          control={
-            <Checkbox
-              sx={{
-                color: "#C46471",
-                "&.Mui-checked": {
-                  color: "#aa717e",
-                },
-              }}
-            />
-          }
-          label={<Pill width="60" height="40" />}
-          labelPlacement="top"
-        />
+    <FormControl component="fieldset" sx={{ width: "700px" }}>
+      <Grid container spacing="5px">
+        <Grid item xs={3} md={3}>
+          <FormLabel
+            component="legend"
+            sx={{
+              color: "#aa717e !important",
+              fontFamily: "Open Sans",
+              top: "10px",
+              textAlign: "right",
+              marginTop: "10px",
+              fontWeight: "bold",
+              fontSize: "30px",
+            }}
+          >
+            Pill
+          </FormLabel>
+        </Grid>
 
-        <FormControlLabel
-          value="top"
-          control={
-            <Checkbox
-              sx={{
-                color: "#C46471",
-                "&.Mui-checked": {
-                  color: "#aa717e",
-                },
-              }}
+        <Grid item xs={9} md={9}>
+          <FormGroup aria-label="position" row>
+            <FormControlLabel
+              value="top"
+              control={
+                <Checkbox
+                  sx={{
+                    color: "#C46471",
+                    "&.Mui-checked": {
+                      color: "#aa717e",
+                    },
+                  }}
+                />
+              }
+              label={<Pill width="30" height="30" />}
+              labelPlacement="top"
             />
-          }
-          label={<Nopill width="60" height="40" />}
-          labelPlacement="top"
-        />
-      </FormGroup>
+
+            <FormControlLabel
+              value="top"
+              control={
+                <Checkbox
+                  sx={{
+                    color: "#C46471",
+                    "&.Mui-checked": {
+                      color: "#aa717e",
+                    },
+                  }}
+                />
+              }
+              label={<Nopill width="30" height="30" />}
+              labelPlacement="top"
+            />
+          </FormGroup>
+        </Grid>
+      </Grid>
     </FormControl>
   );
 }

@@ -15,42 +15,30 @@ const Tracker = () => {
         textAlign={("center", "justify")}
         alignItems={"center"}
         sx={{
-          boxShadow: "25px",
-          p: "20px",
+          width: "750px",
+          height: "650px",
           margin: "20px",
           border: "10px",
-          borderColor: "black",
           borderRadius: "25px",
-          width: "600px",
-          height: "600px",
+          boxShadow: "25px",
+          p: "20px",
+          borderColor: "black",
           color: "#aa717e",
           backgroundColor: "#e9dadb",
           fontFamily: "Open Sans",
-          position: "absolute",
           top: "50px",
           left: "50px",
           marginTop: "20px",
           marginLeft: "300px",
         }}
       >
-        <Stack>
-          <FlowIntensity />
-        </Stack>
-        <Stack>
-          <Flow />
-        </Stack>
-        <Stack>
-          <Mood />
-        </Stack>
-        <Stack>
-          <Exercise />
-        </Stack>
-        <Stack>
-          <Pill />
-        </Stack>
-        <Stack>
-          <SexualActivity />
-        </Stack>
+        <FlowIntensity />
+        <Flow />
+        <Mood />
+        <Exercise />
+        <Pill />
+        <SexualActivity />
+
         <Button
           variant="contained"
           size="small"
@@ -73,8 +61,7 @@ const Tracker = () => {
             marginLeft: "15px",
           }}
         >
-          {" "}
-          Done{" "}
+          Done
         </Button>
       </Box>
     </div>
