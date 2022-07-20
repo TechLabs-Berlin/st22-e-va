@@ -8,7 +8,6 @@ export default function ComboBox() {
       disablePortal
       id="combo-box-demo"
       options={mood}
-      //like the other combobox, changes color only after clicking elsewhere on the screen
       sx={{
         width: "300px",
         color: "#dda0ad",

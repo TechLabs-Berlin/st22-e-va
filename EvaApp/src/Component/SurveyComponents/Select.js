@@ -36,8 +36,6 @@ export default function BasicSelect() {
           value={period}
           label="Period length"
           onChange={handleChange}
-          //check with Soma, outline won't change colour
-          sx={{}}
         >
           <MenuItem
             sx={{

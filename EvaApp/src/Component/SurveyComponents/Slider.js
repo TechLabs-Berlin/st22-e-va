@@ -30,7 +30,7 @@ export default function DiscreteSliderLabel() {
         getAriaValueText={valuetext}
         step={50}
         marks={marks}
-        valueLabelDisplay="on"
+        valueLabelDisplay="off"
         sx={{
           color: "#dda0ad",
           "&.Mui-checked": {
