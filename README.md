@@ -69,5 +69,18 @@ From this nascent stage, we aim to build a strong backend and finetune period an
 
 - [Soma Hargitai](https://github.com/somahargitai)
 
-![Logo](./EvaApp/src/Component/HealthImages/evalogo.png)
+## Additional information
+👩‍💻 We are currently working on fine tuning the calendar and make it more interactive
+
+🧠 We currently learning how MUI helps to make our lives easy
+
+🤔 We are looking for help with backend developemnt
+
+💬 Ask us about the desktop app functionality & future plans
+
+📫 How to reach me - snehaiyerr@gmail.com
+
+⚡️ Fun fact... nobody from our team will say no to a cup of coffee or a nice brunch to talk about this app
+
+![Logo](./st22-e-va/EvaApp/src/Component/HealthImages/evalogo.png)
 
