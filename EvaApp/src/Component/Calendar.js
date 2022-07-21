@@ -1,15 +1,4 @@
-import {
-  Dialog,
-  Typography,
-  Paper,
-  Tooltip,
-  Button,
-  Stack,
-  Box,
-  Grid,
-  Popper,
-  Fade,
-} from "@mui/material";
+import { Dialog, Paper, Tooltip, Button, Stack, Box } from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -36,15 +25,19 @@ function App() {
 
   return (
     <>
-      <Dialog onClose={handleTrackerOpen} open={openTracker}>
+      <Dialog
+        onClose={handleTrackerOpen}
+        open={openTracker}
+        sx={{
+          width: "1000px",
+        }}
+      >
         <Paper
           sx={{
-            height: "1200px",
-            width: "1200px",
+            height: "730px",
+            width: "900px",
           }}
         >
-          {" "}
-          Hello
           <Tracker />
         </Paper>
       </Dialog>

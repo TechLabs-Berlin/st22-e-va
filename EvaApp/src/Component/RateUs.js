@@ -28,12 +28,14 @@ export default function BasicRating() {
     >
       <Box
         sx={{
-          boxShadow: "20px",
-          p: "50px",
-          margin: "-30px",
-          border: "50px",
-          borderColor: "#000000",
+          boxShadow: "25px",
+          p: "20px",
+          margin: "20px",
+          border: "10px",
+          borderColor: "black",
           borderRadius: "25px",
+          width: "400px",
+          height: "400px",
           "& > legend": { mt: 2 },
           backgroundColor: "#ffffff",
           padding: "20px",
