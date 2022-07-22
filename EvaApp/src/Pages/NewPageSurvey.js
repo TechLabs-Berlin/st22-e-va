@@ -19,7 +19,7 @@ const NewPageSurvey = () => {
           fontFamily: "Open Sans",
           position: "absolute",
           top: "50px",
-          left: "50px",
+          left: "150px",
           marginTop: "50px",
           marginLeft: "420px",
           fontWeight: "bold",

@@ -9,6 +9,10 @@ export default function BasicRating() {
 
   return (
     <Box
+      display={"flex"}
+      flexDirection={"column"}
+      textAlign={("center", "justify")}
+      alignItems={"center"}
       sx={{
         boxShadow: "25px",
         p: "20px",
@@ -16,14 +20,19 @@ export default function BasicRating() {
         border: "10px",
         borderColor: "black",
         borderRadius: "25px",
-        "& > legend": { mt: 2 },
-        backgroundColor: "#F4F0F1",
-        padding: "200px",
-        margin: "5px",
-        marginLeft: "15px",
-        height: "150px",
-        width: "200px",
-        textTransform: "none",
+        width: "400px",
+        height: "400px",
+        color: "#aa717e",
+        backgroundColor: "#E4DADB",
+        fontFamily: "Open Sans",
+        position: "absolute",
+        top: "50px",
+        left: "150px",
+        marginTop: "100px",
+        marginLeft: "400px",
+        fontSize: "20px",
+        alignItems: "center",
+        alignContent: "center",
       }}
     >
       <Box

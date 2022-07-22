@@ -41,7 +41,7 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
               fontSize: "20px",
