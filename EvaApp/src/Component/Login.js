@@ -11,6 +11,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import evalogo from "./HealthImages/evalogo.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Copyright(props) {
   return (
@@ -59,8 +61,8 @@ export default function SignUp() {
           }}
         >
           <Avatar
-            sx={{ m: 1, bgcolor: "#ed5e6e", width: "56", height: "56" }}
-            src="HELP"
+            sx={{ m: 1, width: "100px", height: "100px" }}
+            src={evalogo}
           />
           <Typography component="h1" variant="h5">
             Login

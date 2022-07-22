@@ -15,7 +15,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 const NewForm = () => {
   const [activePage, setActivePage] = useState(1);
   const navigate = useNavigate();
-
+  const handleMaybeLater = () => {
+    navigate("/signup");
+  };
   return (
     <div>
       {activePage === 1 && (
@@ -82,6 +84,7 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
+                onClick={handleMaybeLater}
                 sx={{
                   color: "#ffffff",
                   backgroundColor: "#dda0ad",
@@ -392,7 +395,7 @@ const NewForm = () => {
           Previous{" "}
         </Button>
       )}
-      {activePage > 1 && (
+      {activePage < 9 && activePage > 1 && (
         <Button
           variant="contained"
           size="small"
@@ -419,8 +422,37 @@ const NewForm = () => {
             marginLeft: "215px",
           }}
         >
-          {" "}
-          Next{" "}
+          Next
+        </Button>
+      )}
+      {activePage > 8 && (
+        <Button
+          variant="contained"
+          size="small"
+          flexDirection="row"
+          onClick={() => {
+            alert("finish survey");
+          }}
+          sx={{
+            color: "#ffffff",
+            backgroundColor: "#dda0ad",
+            fontWeight: "bold",
+            padding: "20px",
+            margin: "5px",
+            height: "10px",
+            width: "80px",
+            buttonShadow: "10px",
+            fontFamily: "Open Sans",
+            "&:hover": { backgroundColor: "#aa717e" },
+            textTransform: "none",
+            fontSize: "15px",
+            top: "50px",
+            left: "50px",
+            marginTop: "400px",
+            marginLeft: "215px",
+          }}
+        >
+          Finish
         </Button>
       )}
     </div>
