@@ -4,32 +4,48 @@ import Mood from "../Component/TrackerComponent/Mood";
 import Exercise from "../Component/TrackerComponent/Exercise";
 import Pill from "../Component/TrackerComponent/Pill";
 import SexualActivity from "../Component/TrackerComponent/SexualActivity";
-import { Stack, Box, Typography, Button } from "@mui/material";
+import { Stack, Box, Typography, Button, IconButton } from "@mui/material";
 
-const Tracker = () => {
+import CloseIcon from "@mui/icons-material/Close";
+
+const Tracker = ({ handleDialogOpenClose }) => {
+  const handleSubmit = () => {
+    handleDialogOpenClose();
+  };
   return (
-    <div>
+    <div backgroundColor="red !important">
+      <IconButton
+        onClick={handleDialogOpenClose}
+        sx={{
+          position: "absolute",
+          right: 8,
+          top: 8,
+          "& svg": {
+            width: 40,
+            height: 40,
+            color: "#E4DADB",
+          },
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
       <Box
         display={"flex"}
         flexDirection={"column"}
         textAlign={("center", "justify")}
         alignItems={"center"}
         sx={{
+          padding: "100px",
           width: "750px",
-          height: "650px",
-          margin: "20px",
+          height: "550px",
           border: "10px",
           borderRadius: "25px",
           boxShadow: "25px",
-          p: "20px",
           borderColor: "black",
           color: "#aa717e",
-          backgroundColor: "#e9dadb",
+          backgroundColor: "#F4F0F1",
           fontFamily: "Open Sans",
           top: "50px",
-          left: "50px",
-          marginTop: "20px",
-          marginLeft: "300px",
         }}
       >
         <FlowIntensity />
@@ -40,6 +56,7 @@ const Tracker = () => {
         <SexualActivity />
 
         <Button
+          onClick={handleSubmit}
           variant="contained"
           size="small"
           flexDirection="row"

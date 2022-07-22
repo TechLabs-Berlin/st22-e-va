@@ -1,12 +1,22 @@
-import { Dialog, Paper, Tooltip, Button, Stack, Box } from "@mui/material";
+import {
+  Dialog,
+  Typography,
+  Paper,
+  Tooltip,
+  Button,
+  Stack,
+  Box,
+  Grid,
+  Popper,
+  Fade,
+} from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Moment from "react-moment";
 import Tracker from "../Pages/Tracker";
 
-//glitching with new tracker, check with Soma
-function App() {
+function Dates() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [cycle, setCycle] = useState(28);
   const [openTracker, setOpenTracker] = useState(false);
@@ -29,17 +39,12 @@ function App() {
         onClose={handleTrackerOpen}
         open={openTracker}
         sx={{
-          width: "1000px",
+          "& > * > *": {
+            maxWidth: "1200px !important",
+          },
         }}
       >
-        <Paper
-          sx={{
-            height: "730px",
-            width: "900px",
-          }}
-        >
-          <Tracker />
-        </Paper>
+        <Tracker handleDialogOpenClose={handleTrackerOpen} />
       </Dialog>
       <Stack
         sx={{
@@ -263,5 +268,5 @@ function App() {
     </>
   );
 }
-//Is App here correct?
-export default App;
+
+export default Dates;
