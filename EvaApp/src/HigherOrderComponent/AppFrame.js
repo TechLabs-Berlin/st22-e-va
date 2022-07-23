@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Stack } from "@mui/material/";
-
 import Navbar from "../Component/Navbar";
-
 
 function AppFrame(WrappedComponent) {
   function WrapperComponent() {
@@ -21,7 +19,7 @@ function AppFrame(WrappedComponent) {
             <WrappedComponent />
           </Grid>
         </Grid>
-        <footer>
+        <Navbar>
           <Box
             paddingLeft={30}
             paddingRight={30}
@@ -37,7 +35,7 @@ function AppFrame(WrappedComponent) {
               alignItems="center"
             ></Stack>
           </Box>
-        </footer>
+        </Navbar>
       </>
     );
   }

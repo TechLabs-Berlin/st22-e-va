@@ -79,7 +79,7 @@ From this nascent stage, we aim to build a strong backend and finetune period an
 
 💬 Ask us about the desktop app functionality & future plans
 
-📫 How to reach me -
+📫 How to reach us -
 
 - snehaiyerr@gmail.com
 - omar.s.rachidi@gmail.com
