@@ -30,6 +30,8 @@ import PeriodTracker from "./Pages/PeriodTracker";
 import Login from "./Pages/Login";
 import Library from "./Pages/Library";
 import Contact from "./Pages/Contact";
+import Homepage from "./Pages/Homepage";
+
 const App = () => (
   <Routes>
     <Route path="/firstpage" element={<FirstPage />} />
@@ -40,6 +42,7 @@ const App = () => (
     <Route path="/login" element={<Login />} />
     <Route path="/health" element={<Library />} />
     <Route path="/contactus" element={<Contact />} />
+    <Route path="/homepage" element={<Homepage />} />
   </Routes>
 );
 
