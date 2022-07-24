@@ -49,6 +49,95 @@ export default function Types() {
         >
       We want to make sure that you understand even more about your own body and don't lose track of it.       
       </Typography>
+      <Typography sx={{
+      position: "absolute",
+      width: "798px",
+      height: "90px",
+      left: "322px",
+      top: "1250px",
+      
+      fontFamily: 'Avenir Next',
+      fontStyle: "normal",
+      fontWeight: "400",
+      fontSize: "60px",
+      lineHeight: "150%",      
+      display: "flex",
+      alignItems: "center",
+      textAlign: "center",
+      
+      color: "#AA9BA6",
+        variant:"h2",
+        gutterBottomComponent:"div"}} 
+        >
+What our users have to say?
+      </Typography>
+      <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "1px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/Iro6cBbsXOo"
+      />
+      <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "249.91px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/FTMPYMNw_zQ"
+      />
+      <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "497.8px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/bzv_zCAXgeg"
+      />
+      <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "745.69px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/FziTCjw9fVA"
+      />
+       <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "993.57px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/jVYnBn3M9R0"
+      />
+      <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "204.91px",
+          height: "371.83px",
+          left: "1235px",
+          top: "645px",
+        }}
+        src="https://source.unsplash.com/XivbqAPEoJg"
+      />
     </Box>
+    
   );
 }

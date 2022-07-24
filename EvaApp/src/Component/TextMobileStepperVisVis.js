@@ -12,21 +12,21 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 const steps = [
   {
     
-    description: `“Love everything about this platform! I love the tracking options, the metrics, the data reports, and the projections! Super helpful and amazing.”                             
-    (Emma Schmidt)`,
+    description: `“It has great fluidity and options between life changes and I find that the information provided is well sourced and cited. I feel very comfortable and confident using this app.                         
+    (Ingrid Müller)`,
   },
   {
     description:
-    `“I love that I don't have to dig through ads to use the platform :) I've only used it for 1 cycle and so far it's been a good experience."                  
-    (Luisa Santos)`,
+    `““Love everything about this platform! I love the tracking options, the metrics, the data reports, and the projections! Super helpful and amazing.”                             
+    (Emma Schmidt)`,
   },
   {
-    description:  `It has great fluidity and options between life changes and I find that the information provided is well sourced and cited. I feel very comfortable and confident using this app.                         
-    (Ingrid Müller)`,
+    description:  `"I love that I don't have to dig through ads to use the platform :) I've only used it for 1 cycle and so far it's been a good experience."                  
+    (Luisa Santos)`,
   },
 ];
 
-export default function TextMobileStepper() {
+export default function TextMobileStepperVisVis() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = steps.length;
@@ -43,7 +43,7 @@ export default function TextMobileStepper() {
     <Box sx={{ position: "absolute", 
     width: "384px",
     height: "135px",
-    left: "50px",
+    left: "950px",
     top: "1400px",
     
     fontFamily: "Avenir Next",

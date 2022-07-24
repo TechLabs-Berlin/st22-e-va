@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { textTransform } from '@mui/system';
 
 export default function ColorButtons() {
   return (
@@ -31,7 +32,8 @@ export default function ColorButtons() {
         textAlign: "center",
         fontWidth: "335px",
         fontWeight: "45px",
-        fontDisplay:"flex"}}
+        fontDisplay:"flex",
+        textTransform: "none"}}
         >
         Sign up and get started
       </Button>
