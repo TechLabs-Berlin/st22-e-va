@@ -127,9 +127,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             <h3>Do you track your period?</h3>
@@ -158,9 +161,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -190,9 +196,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -222,9 +231,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -254,9 +266,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -286,9 +301,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -318,9 +336,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             {" "}
@@ -350,9 +371,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             <h3>
@@ -386,7 +410,7 @@ const NewForm = () => {
             textTransform: "none",
             fontSize: "15px",
             top: "50px",
-            left: "50px",
+            left: "140px",
             marginTop: "400px",
             marginLeft: "430px",
           }}
@@ -417,7 +441,7 @@ const NewForm = () => {
             textTransform: "none",
             fontSize: "15px",
             top: "50px",
-            left: "50px",
+            left: "160px",
             marginTop: "400px",
             marginLeft: "215px",
           }}
@@ -447,7 +471,7 @@ const NewForm = () => {
             textTransform: "none",
             fontSize: "15px",
             top: "50px",
-            left: "50px",
+            left: "160px",
             marginTop: "400px",
             marginLeft: "215px",
           }}
