@@ -1,33 +1,39 @@
-import { Dialog, Typography, Paper, Tooltip, Stack } from "@mui/material";
+import { Dialog, Button, Stack, Box, Grid } from "@mui/material";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Moment from "react-moment";
-import SymptomTracker from "../Pages/SymptomTracker";
+import Tracker from "../Pages/Tracker";
 
-function App() {
+function Dates() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [cycle, setCycle] = useState(28);
-  const [openSymptomTracker, setOpenSymptomTracker] = useState(false);
+  const [openTracker, setOpenTracker] = useState(false);
 
   console.log(cycle);
   const cycleLength = parseInt(cycle);
 
-  const handleSymptomTrackerOpen = () => {
-    setOpenSymptomTracker(!openSymptomTracker);
+  const handleTrackerOpen = () => {
+    setOpenTracker(!openTracker);
   };
   const handleCalendarDaySelection = (value) => {
     console.log(value);
-    handleSymptomTrackerOpen();
+    handleTrackerOpen();
     setSelectedDate(value);
   };
 
   return (
     <>
-      <Dialog onClose={handleSymptomTrackerOpen} open={openSymptomTracker}>
-        <Paper>
-          <SymptomTracker />
-        </Paper>
+      <Dialog
+        onClose={handleTrackerOpen}
+        open={openTracker}
+        sx={{
+          "& > * > *": {
+            maxWidth: "1200px !important",
+          },
+        }}
+      >
+        <Tracker handleDialogOpenClose={handleTrackerOpen} />
       </Dialog>
       <Stack
         sx={{
@@ -63,6 +69,126 @@ function App() {
             value={selectedDate}
             className="calendar mt-0"
           />
+        </div>
+        <Box
+          sx={{
+            boxShadow: "20px",
+            p: "50px",
+            margin: "50px",
+            marginLeft: "5px",
+            marginTop: "20px",
+            border: "50px",
+            borderColor: "#000000",
+            borderRadius: "25px",
+            "& > legend": { mt: 2 },
+            backgroundColor: "#F4F0F1",
+            color: "#C46471",
+            padding: "20px",
+            height: "150px",
+            width: "300px",
+            textTransform: "none",
+          }}
+        >
+          <Button>Add a note</Button>
+        </Box>
+
+        <div>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "-500px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Period cycle
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Sexual Activity
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Exercise
+          </Stack>
+          <Stack
+            sx={{
+              margin: "10px",
+              marginLeft: "340px",
+              marginTop: "90px",
+              transform: "rotate(90deg)",
+              height: "30px",
+              width: "120px",
+              backgroundColor: "#DDA0AD",
+              color: "#C46471",
+              boxShadow: "2px",
+              p: "2px",
+              margin: "10px",
+              border: "20px",
+              borderColor: "black",
+              borderRadius: "15px",
+              fontSize: "16px",
+              fontFamily: "Open Sans",
+              textAlign: "center",
+              textDecoration: "center",
+            }}
+          >
+            Mood
+          </Stack>
         </div>
       </Stack>
       <Stack
@@ -131,5 +257,5 @@ function App() {
     </>
   );
 }
-//Is App here correct?
-export default App;
+
+export default Dates;

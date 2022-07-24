@@ -10,10 +10,14 @@ import Combobox from "./SurveyComponents/Combobox";
 import RadioThree from "./SurveyComponents/RadioThree";
 import RadioFour from "./SurveyComponents/RadioFour";
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const NewForm = () => {
   const [activePage, setActivePage] = useState(1);
-
+  const navigate = useNavigate();
+  const handleMaybeLater = () => {
+    navigate("/signup");
+  };
   return (
     <div>
       {activePage === 1 && (
@@ -37,9 +41,12 @@ const NewForm = () => {
               fontFamily: "Open Sans",
               position: "absolute",
               top: "50px",
-              left: "50px",
+              left: "150px",
               marginTop: "100px",
               marginLeft: "400px",
+              fontSize: "20px",
+              alignItems: "center",
+              alignContent: "center",
             }}
           >
             <p>
@@ -52,6 +59,9 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
+                onClick={() => {
+                  setActivePage(2);
+                }}
                 sx={{
                   color: "#ffffff",
                   backgroundColor: "#dda0ad",
@@ -64,7 +74,7 @@ const NewForm = () => {
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "18px",
                 }}
               >
                 Let's do it!
@@ -74,6 +84,7 @@ const NewForm = () => {
                 variant="contained"
                 size="small"
                 flexDirection="column"
+                onClick={handleMaybeLater}
                 sx={{
                   color: "#ffffff",
                   backgroundColor: "#dda0ad",
@@ -86,10 +97,10 @@ const NewForm = () => {
                   fontFamily: "Open Sans",
                   "&:hover": { backgroundColor: "#aa717e" },
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "18px",
                 }}
               >
-                Not now, maybe later!
+                Maybe later!
               </Button>
             </Stack>
           </Box>
@@ -384,36 +395,66 @@ const NewForm = () => {
           Previous{" "}
         </Button>
       )}
-
-      <Button
-        variant="contained"
-        size="small"
-        flexDirection="row"
-        onClick={() => {
-          setActivePage(activePage + 1);
-        }}
-        sx={{
-          color: "#ffffff",
-          backgroundColor: "#dda0ad",
-          fontWeight: "bold",
-          padding: "20px",
-          margin: "5px",
-          height: "10px",
-          width: "80px",
-          buttonShadow: "10px",
-          fontFamily: "Open Sans",
-          "&:hover": { backgroundColor: "#aa717e" },
-          textTransform: "none",
-          fontSize: "15px",
-          top: "50px",
-          left: "50px",
-          marginTop: "400px",
-          marginLeft: "215px",
-        }}
-      >
-        {" "}
-        Next{" "}
-      </Button>
+      {activePage < 9 && activePage > 1 && (
+        <Button
+          variant="contained"
+          size="small"
+          flexDirection="row"
+          onClick={() => {
+            setActivePage(activePage + 1);
+          }}
+          sx={{
+            color: "#ffffff",
+            backgroundColor: "#dda0ad",
+            fontWeight: "bold",
+            padding: "20px",
+            margin: "5px",
+            height: "10px",
+            width: "80px",
+            buttonShadow: "10px",
+            fontFamily: "Open Sans",
+            "&:hover": { backgroundColor: "#aa717e" },
+            textTransform: "none",
+            fontSize: "15px",
+            top: "50px",
+            left: "50px",
+            marginTop: "400px",
+            marginLeft: "215px",
+          }}
+        >
+          Next
+        </Button>
+      )}
+      {activePage > 8 && (
+        <Button
+          variant="contained"
+          size="small"
+          flexDirection="row"
+          onClick={() => {
+            alert("finish survey");
+          }}
+          sx={{
+            color: "#ffffff",
+            backgroundColor: "#dda0ad",
+            fontWeight: "bold",
+            padding: "20px",
+            margin: "5px",
+            height: "10px",
+            width: "80px",
+            buttonShadow: "10px",
+            fontFamily: "Open Sans",
+            "&:hover": { backgroundColor: "#aa717e" },
+            textTransform: "none",
+            fontSize: "15px",
+            top: "50px",
+            left: "50px",
+            marginTop: "400px",
+            marginLeft: "215px",
+          }}
+        >
+          Finish
+        </Button>
+      )}
     </div>
   );
 };

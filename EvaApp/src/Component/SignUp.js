@@ -1,5 +1,5 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
+import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -11,12 +11,13 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import evalogo from "./HealthImages/evalogo.png";
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="#aa717e" align="center" {...props}>
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="http://localhost:3000/homepage">
         www.eva.com
       </Link>{" "}
       {new Date().getFullYear()}
@@ -52,7 +53,7 @@ export default function SignUp() {
             color: "#aa717e",
             background: "#e9dadb",
             padding: "50px",
-            height: "600px",
+            height: "700px",
             width: "450px",
             fontFamily: "Open Sans",
             textTransform: "none",
@@ -60,9 +61,10 @@ export default function SignUp() {
           }}
         >
           <Avatar
-            sx={{ m: 1, bgcolor: "#ed5e6e", width: "56", height: "56" }}
-            src="HELP"
+            sx={{ m: 1, width: "100px", height: "100px" }}
+            src={evalogo}
           />
+
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
@@ -82,6 +84,11 @@ export default function SignUp() {
                   id="Name"
                   label="Name"
                   autoFocus
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
 
@@ -93,6 +100,11 @@ export default function SignUp() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -104,6 +116,11 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -115,6 +132,11 @@ export default function SignUp() {
                   type="confirm password"
                   id="password"
                   autoComplete="rewrite-password"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>

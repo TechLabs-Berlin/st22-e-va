@@ -16,7 +16,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="#aa717e" align="center" {...props}>
       {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="http://localhost:3000/homepage">
         www.eva.com
       </Link>{" "}
       {new Date().getFullYear()}
@@ -27,14 +27,14 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function ContactUs() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      subject: data.get("subject"),
       email: data.get("email"),
-      password: data.get("password"),
-      renterPassword: data.get("confirm password"),
+      message: data.get("message"),
     });
   };
 
@@ -76,8 +76,13 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="subject"
-                  label="subject"
+                  label="Subject"
                   autoFocus
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
 
@@ -89,6 +94,11 @@ export default function SignUp() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -100,6 +110,13 @@ export default function SignUp() {
                   type="message"
                   id="message"
                   autoComplete="message"
+                  multiline
+                  rows={6}
+                  sx={{
+                    "& fieldset": {
+                      borderColor: "#6E5F6A !important",
+                    },
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
