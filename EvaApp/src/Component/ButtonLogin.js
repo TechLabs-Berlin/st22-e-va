@@ -1,4 +1,5 @@
 import { Button } from '@mui/material/';
+import { Link } from 'react-router-dom';
   
 const ButtonLogin = () => {
     return (
@@ -17,7 +18,8 @@ const ButtonLogin = () => {
         textAlign: "center",
         
         color: "#C46471",}}
-        >Log in</Button>
+        
+        ><Link style={{textDecoration: 'none', color:"inherit"}} to="/login">Log In</Link></Button>
         
     )
 }

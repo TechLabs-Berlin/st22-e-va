@@ -16,11 +16,10 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-            Irregular period
+          <a style={{textDecoration: 'none', color:"inherit"}} target="_blank" href="https://kidshealth.org/en/teens/irregular-periods.html">Irregular Period</a>            
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          </Typography>
+          Most girls get their first period between the ages of 10 and 15, but some get it earlier and some later.          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

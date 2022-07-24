@@ -16,11 +16,11 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-          Causes of long periods 
+          <a style={{textDecoration: 'none', color:"inherit"}} target="_blank" href="https://www.healthline.com/health/womens-health/long-periods">Causes of long periods </a>
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          </Typography>
+          Generally, a period lasts between three to seven days. A menstrual period that lasts longer than seven days is considered a long period.
+</Typography>
         </CardContent>
       </CardActionArea>
     </Card>

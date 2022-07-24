@@ -16,11 +16,11 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-            Sex and Intimicy 
+          <a style={{textDecoration: 'none', color:"inherit"}} target="_blank" href="https://www.everydayhealth.com/sexual-health/living-with/better-sex-through-intimacy/">Sex and Intimicy</a>            
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          </Typography>
+          Emotional intimacy can lead to better sexual experiences for many people, especially women.
+</Typography>
         </CardContent>
       </CardActionArea>
     </Card>

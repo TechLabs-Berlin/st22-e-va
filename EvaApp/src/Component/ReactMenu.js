@@ -23,7 +23,7 @@ export default function ReactMenu() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        E-va Menu
+        E-va Menu 
       </Button>
       <Menu
         id="basic-menu"
@@ -34,15 +34,13 @@ export default function ReactMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}> <Link color="inherit" href="http://localhost:3000/signup">
-        www.eva.com
-      </Link>Sign Up</MenuItem>
-        <MenuItem onClick={handleClose}>Log In</MenuItem>
-        <MenuItem onClick={handleClose}>Health</MenuItem>
-        <MenuItem onClick={handleClose}>Period Tracker</MenuItem>
-        <MenuItem onClick={handleClose}>Survey</MenuItem>
-        <MenuItem onClick={handleClose}>Rate Us</MenuItem>
-        <MenuItem onClick={handleClose}>Contact Us</MenuItem>
+        <MenuItem onClick={handleClose}> <Link style={{textDecoration: 'none', color:"inherit"}}to="/signup">Sign Up</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/login">Log In</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/health">Health</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/periodtracker">Period Tracker</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/survey">Survey</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/rateus">Rate Us</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none', color:"inherit"}} to="/contactus">Contact Us</Link></MenuItem>
 
       </Menu>
     </div>

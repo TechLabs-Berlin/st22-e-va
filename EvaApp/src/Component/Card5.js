@@ -16,11 +16,13 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-          Vaginoplasty and Labiaplasty
+          <a style={{textDecoration: 'none', color:"inherit"}} target="_blank" href="https://www.webmd.com/women/guide/vaginoplasty-and-labiaplasty-procedures">Vaginoplasty and Labiaplasty
+</a>            
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          </Typography>
+          In order to decide if you should consider vaginoplasty or labiaplasty, it's important to understand the difference between reconstructive surgery and cosmetic surgery.
+
+</Typography>
         </CardContent>
       </CardActionArea>
     </Card>

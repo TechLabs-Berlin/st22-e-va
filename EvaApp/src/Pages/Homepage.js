@@ -3,8 +3,6 @@ import ReactMenu from '../Component/ReactMenu'
 import Typography from '../Component/Typographyh1h2';
 import ColorButtons from '../Component/OmarButton';
 import TextMobileStepper from '../Component/TextMobileStepper';
-import TextMobileStepperVis from '../Component/TextMobileStepperVis';
-import TextMobileStepperVisVis from '../Component/TextMobileStepperVisVis';
 import Card1 from '../Component/Card1'
 import Card2 from '../Component/Card2'
 import Card3 from '../Component/Card3'
@@ -23,8 +21,6 @@ function Homepage() {
     <Typography />
     <ColorButtons />
     <TextMobileStepper />
-    <TextMobileStepperVis />
-    <TextMobileStepperVisVis />
     <Card1 />
     <Card2 />
     <Card3 />

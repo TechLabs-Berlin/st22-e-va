@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { textTransform } from '@mui/system';
-
+import { Link } from 'react-router-dom';
 export default function ColorButtons() {
   return (
     <Stack direction="row" spacing={1}>
@@ -34,8 +33,8 @@ export default function ColorButtons() {
         fontWeight: "45px",
         fontDisplay:"flex",
         textTransform: "none"}}
-        >
-        Sign up and get started
+        ><Link style={{textDecoration: 'none', color:"inherit"}} to="/survey">Sign up and get started
+        </Link>
       </Button>
     </Stack>
   );

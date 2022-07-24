@@ -43,7 +43,7 @@ export default function TextMobileStepper() {
     <Box sx={{ position: "absolute", 
     width: "384px",
     height: "135px",
-    left: "50px",
+    left: "270px",
     top: "1400px",
     
     fontFamily: "Avenir Next",
@@ -54,25 +54,21 @@ export default function TextMobileStepper() {
     display: "flex",
     alignItems: "center",}}>
       <Box sx={{ position: "absolute",
-width: "384px",
+width: "700px",
 height: "135px",
-left: "11px",
+left: "100px",
 top: "100px",}}>
         {steps[activeStep].description}
       </Box>
       <MobileStepper
       position="absolute"
-      width="384px"
-      height="135px"
-      left="20px"
-      top="100px"
         steps={maxSteps}
         activeStep={activeStep}
         nextButton={
           <Button sx={{ position: "absolute", 
           width: "384px",
           height: "135px",
-          left: "11px",
+          left: "400px",
           top: "250px",
           color: "#fffff"}}
             size="small"
@@ -92,8 +88,8 @@ top: "100px",}}>
           width: "384px",
           height: "135px",
           left: "0px",
-          top: "200px",
-          color: "#fffff",}} size="small" onClick={handleBack} disabled={activeStep === 0}>
+          top: "250px",
+          color: "inherit",}} size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (
               <KeyboardArrowRight />
             ) : (

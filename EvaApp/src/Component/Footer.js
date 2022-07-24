@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { common } from '@mui/material/colors';
+import evalogo from './Images/evalogo.png';
 
 export default function Footer() {
   return (
     <Box sx={{ width: '100%', maxWidth: 500 }}>
+        
 <Box
       sx={{
         width: 1450,
@@ -232,7 +233,20 @@ Health Library            </Typography>
             >
 Editorial Process and Standards           </Typography>
 
-
+<Box
+component="img"
+sx={{
+position: "absolute",
+width: "198px",
+height: "198px",
+left: "50px",
+top: "3100px",
+}}
+src={evalogo}
+/>
     </Box>
+
+
+
 
 )};

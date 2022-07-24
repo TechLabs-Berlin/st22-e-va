@@ -16,10 +16,10 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-            Mature Sexuality
+          <a style={{textDecoration: 'none', color:"inherit"}} target="_blank" href="https://www.bbc.com/future/article/20160630-the-enduring-enigma-of-female-desire">Mature Sexuality</a>            
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+          Why have scientists been slow to understand women's sexuality, asks Rachel Nuwer.
           </Typography>
         </CardContent>
       </CardActionArea>

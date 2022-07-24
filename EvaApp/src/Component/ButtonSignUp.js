@@ -1,5 +1,6 @@
 import { Button } from '@mui/material/';
-  
+import { Link } from 'react-router-dom';
+
 const ButtonSignUp = () => {
     return (
     <Button     sx={{position: "absolute",
@@ -17,7 +18,7 @@ const ButtonSignUp = () => {
         textAlign: "center",
         
         color: "#C46471",}}
-        >Sign up</Button>
+        ><Link style={{textDecoration: 'none', color:"inherit"}} to="/signup">Sign Up</Link></Button>
         )
 }
 

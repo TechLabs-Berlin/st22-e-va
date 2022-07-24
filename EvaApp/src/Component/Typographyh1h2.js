@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { common } from '@mui/material/colors';
-
+import evalogo from './Images/evalogo.png'
 
 export default function Types() {
   return (
@@ -148,7 +148,18 @@ export default function Types() {
             >
     What our users have to say?
           </Typography>
-        
+          <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "198px",
+          height: "198px",
+          left: "600px",
+          top: "45px",
+        }}
+        src={evalogo}
+      />
+      
     </Box>
     
   );
