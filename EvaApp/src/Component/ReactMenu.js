@@ -1,22 +1,10 @@
 import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { Link } from 'react-router-dom';
 
-const options = [
-    
-  'LOG IN',
-  'TRACKER',
-  'RATE US',
-  'HEALTH PAGE',
-  'CONTACT',
-  'SIGN UP',
-];
-
-const ITEM_HEIGHT = 48;
-
-export default function LongMenu() {
+export default function ReactMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -28,36 +16,34 @@ export default function LongMenu() {
 
   return (
     <div>
-      <IconButton
-        aria-label="more"
-        id="long-button"
-        aria-controls={open ? 'long-menu' : undefined}
-        aria-expanded={open ? 'true' : undefined}
+      <Button sx={{left: "20px", top:"20px", color:"#C46471", fontFamily: "Avenir Next", textTransform: "none", fontSize: "20px"}}
+        id="basic-button"
+        aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        <MoreVertIcon />
-      </IconButton>
+        E-va Menu
+      </Button>
       <Menu
-        id="long-menu"
-        MenuListProps={{
-          'aria-labelledby': 'long-button',
-        }}
+        id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: '25ch',
-          },
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
         }}
       >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-            {option}
-          </MenuItem>
-        ))}
+        <MenuItem onClick={handleClose}> <Link color="inherit" href="http://localhost:3000/signup">
+        www.eva.com
+      </Link>Sign Up</MenuItem>
+        <MenuItem onClick={handleClose}>Log In</MenuItem>
+        <MenuItem onClick={handleClose}>Health</MenuItem>
+        <MenuItem onClick={handleClose}>Period Tracker</MenuItem>
+        <MenuItem onClick={handleClose}>Survey</MenuItem>
+        <MenuItem onClick={handleClose}>Rate Us</MenuItem>
+        <MenuItem onClick={handleClose}>Contact Us</MenuItem>
+
       </Menu>
     </div>
   );

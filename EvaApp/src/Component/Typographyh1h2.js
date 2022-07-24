@@ -26,7 +26,7 @@ export default function Types() {
                   gutterBottomComponent:"div",
                 }}
                   >  
-                  Welcome to E-VA                                            
+                  Welcome to E-va                                            
                   </Typography>
 
       <Typography sx={{
@@ -148,7 +148,7 @@ export default function Types() {
             >
     What our users have to say?
           </Typography>
-    
+        
     </Box>
     
   );

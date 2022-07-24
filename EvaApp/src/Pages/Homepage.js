@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMenu from "../Component/ReactMenu";
+import ReactMenu from '../Component/ReactMenu'
 import Typography from '../Component/Typographyh1h2';
 import ColorButtons from '../Component/OmarButton';
 import TextMobileStepper from '../Component/TextMobileStepper';
@@ -12,6 +12,8 @@ import Card4 from '../Component/Card4'
 import Card5 from '../Component/Card5'
 import Card6 from '../Component/Card6'
 import Footer from '../Component/Footer';
+import ButtonLogin from '../Component/ButtonLogin';
+import ButtonSignUp from '../Component/ButtonSignUp';
 
 
 function Homepage() {
@@ -30,6 +32,8 @@ function Homepage() {
     <Card5 />
     <Card6 />
     <Footer />
+    <ButtonLogin />
+    <ButtonSignUp />
   </div>
   );
 }

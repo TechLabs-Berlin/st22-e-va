@@ -1,8 +1,4 @@
-import {
-
-    Button,
-
-} from '@mui/material/';
+import { Button } from '@mui/material/';
   
 const SnehaButton = () => {
     return (
