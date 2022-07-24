@@ -11,7 +11,8 @@ import Card3 from '../Component/Card3'
 import Card4 from '../Component/Card4'
 import Card5 from '../Component/Card5'
 import Card6 from '../Component/Card6'
-
+import Footer from '../Component/Footer';
+import Logo from '../Component/Logo';
 
 
 function Homepage() {
@@ -29,6 +30,8 @@ function Homepage() {
     <Card4 />
     <Card5 />
     <Card6 />
+    <Footer />
+    <Logo />
   </div>
   );
 }

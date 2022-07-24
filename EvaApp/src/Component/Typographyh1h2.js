@@ -49,28 +49,6 @@ export default function Types() {
         >
       We want to make sure that you understand even more about your own body and don't lose track of it.       
       </Typography>
-      <Typography sx={{
-      position: "absolute",
-      width: "798px",
-      height: "90px",
-      left: "322px",
-      top: "1250px",
-      
-      fontFamily: 'Avenir Next',
-      fontStyle: "normal",
-      fontWeight: "400",
-      fontSize: "60px",
-      lineHeight: "150%",      
-      display: "flex",
-      alignItems: "center",
-      textAlign: "center",
-      
-      color: "#AA9BA6",
-        variant:"h2",
-        gutterBottomComponent:"div"}} 
-        >
-What our users have to say?
-      </Typography>
       <Box
         component="img"
         sx={{
@@ -136,6 +114,49 @@ What our users have to say?
           top: "645px",
         }}
         src="https://source.unsplash.com/XivbqAPEoJg"
+      />
+      <Box
+      sx={{
+        width: 1450,
+        height: 650,
+        position: "absolute",
+        top: "1200px",
+          backgroundColor: '#F4F0F1',
+        
+        }}    />
+
+        <Typography sx={{
+          position: "absolute",
+          width: "798px",
+          height: "90px",
+          left: "322px",
+          top: "1250px",
+          
+          fontFamily: 'Avenir Next',
+          fontStyle: "normal",
+          fontWeight: "400",
+          fontSize: "60px",
+          lineHeight: "150%",      
+          display: "flex",
+          alignItems: "center",
+          textAlign: "center",
+          
+          color: "#AA9BA6",
+            variant:"h2",
+            gutterBottomComponent:"div"}} 
+            >
+    What our users have to say?
+          </Typography>
+          <Box
+        component="img"
+        sx={{
+          position: "absolute",
+          width: "248.91px",
+          height: "371.83px",
+          left: "200px",
+          top: "0",
+        }}
+        src="./Component/Logo/evalogo.png"
       />
     </Box>
     

@@ -16,7 +16,7 @@ export default function ActionAreaCard() {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#6E5F6A">
-            Maternity
+          Vaginoplasty and Labiaplasty
           </Typography>
           <Typography variant="body2" color="#6E5F6A">
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
