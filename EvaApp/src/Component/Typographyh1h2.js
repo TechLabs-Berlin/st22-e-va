@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { common } from '@mui/material/colors';
 
+
 export default function Types() {
   return (
     <Box sx={{ width: '100%', maxWidth: 500 }}>
@@ -147,17 +148,7 @@ export default function Types() {
             >
     What our users have to say?
           </Typography>
-          <Box
-        component="img"
-        sx={{
-          position: "absolute",
-          width: "248.91px",
-          height: "371.83px",
-          left: "200px",
-          top: "0",
-        }}
-        src="./Component/Logo/evalogo.png"
-      />
+    
     </Box>
     
   );
